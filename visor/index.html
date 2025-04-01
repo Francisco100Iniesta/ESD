@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Visor Ontología</title>
+  <script src="https://openseadragon.github.io/openseadragon/openseadragon.min.js"></script>
+  <style>
+    body { margin: 0; background: #000; }
+    #openseadragon { width: 100vw; height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="openseadragon"></div>
+
+  <script>
+    OpenSeadragon({
+      id: "openseadragon",
+      prefixUrl: "https://openseadragon.github.io/openseadragon/images/",
+      tileSources: {
+        type: 'image',
+        url: "https://francisco100iniesta.github.io/ESD/visor/bueno.jpg"
+      },
+      defaultZoomLevel: 1,
+      maxZoomLevel: 5,
+      zoomPerScroll: 1.2
+    });
+  </script>
+</body>
+</html>
