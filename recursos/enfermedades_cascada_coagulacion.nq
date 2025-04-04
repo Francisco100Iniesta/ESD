@@ -1,0 +1,755 @@
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/OGMS_0000045> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontobee.org/ontology/OGMS?iri=http://purl.obolibrary.org/obo/OGMS_0000090> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/GENO_0000141> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/GENO_0000141> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/OGMS_0000045> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/GENO_0000141> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.projecthalo.com/aura#Inheritance> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/GENO_0000141> <http://www.w3.org/2000/01/rdf-schema#label> "inheritance pattern" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0002200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0002200> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/OGMS_0000045> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0002200> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.jp/bio/4/id/201106050805651670> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0002200> <http://www.w3.org/2000/01/rdf-schema#label> "has phenotype" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/PBO_0000023> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/OGMS_0000045> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302> <http://www.w3.org/2000/01/rdf-schema#label> "causes or contributes to condition" <https://um.es/graph/Coagulationdisorders> .
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontobee.org/ontology/OGMS?iri=http://purl.obolibrary.org/obo/OGMS_0000090> <https://um.es/graph/Coagulationdisorders> .
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/OGMS_0000045> <https://um.es/graph/Coagulationdisorders> .
+<https://bioportal.bioontology.org/ontologies/has_severity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> <https://um.es/graph/Coagulationdisorders> .
+<https://bioportal.bioontology.org/ontologies/has_severity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/OGMS_0000045> <https://um.es/graph/Coagulationdisorders> .
+<https://bioportal.bioontology.org/ontologies/has_severity> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/NCIT_C25676> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/ICD9CM/780> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/ICD9CM/780> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.jp/bio/4/id/201106050805651670> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/ICD9CM/780> <http://www.w3.org/2000/01/rdf-schema#label> "General_Symptoms" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Mild_Hemophilia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Mild_Hemophilia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Hemophilia> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Mild_Hemophilia> <http://www.w3.org/2000/01/rdf-schema#label> "Mild_Hemophilia" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Moderate_hemophilia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Moderate_hemophilia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Hemophilia> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Moderate_hemophilia> <http://www.w3.org/2000/01/rdf-schema#label> "Moderate_hemophilia" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Severe_hemophilia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Severe_hemophilia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Hemophilia> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Severe_hemophilia> <http://www.w3.org/2000/01/rdf-schema#label> "Severe_hemophilia" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.jp/bio/4/id/200906083778623918> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.jp/bio/4/id/200906083778623918> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.projecthalo.com/aura#Inheritance> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.jp/bio/4/id/200906083778623918> <http://www.w3.org/2000/01/rdf-schema#label> "Dominant inheritance" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.jp/bio/4/id/201106050805651670> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.jp/bio/4/id/201106050805651670> <http://www.w3.org/2000/01/rdf-schema#label> "Symptomatology" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/CHEBI_23888> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/CHEBI_23888> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/RO_0003302#Supportive_Therapies> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/CHEBI_23888> <http://www.w3.org/2000/01/rdf-schema#label> "Drug" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/NCIT_C25676> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/NCIT_C25676> <http://www.w3.org/2000/01/rdf-schema#label> "Severity" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/OGMS_0000045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/OGMS_0000045> <http://www.w3.org/2000/01/rdf-schema#label> "Disorder" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/PBO_0000023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/PBO_0000023> <http://www.w3.org/2000/01/rdf-schema#label> "Gen" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Anticoagulants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Anticoagulants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/CHEBI_23888> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Anticoagulants> <http://www.w3.org/2000/01/rdf-schema#label> "Anticoagulants" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Antiplatelet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Antiplatelet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/CHEBI_23888> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Antiplatelet> <http://www.w3.org/2000/01/rdf-schema#label> "Antiplatelet" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Fibrinolytics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Fibrinolytics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/CHEBI_23888> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Fibrinolytics> <http://www.w3.org/2000/01/rdf-schema#label> "Fibrinolytics" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.jp/bio/4/id/201106050805651670> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> <http://www.w3.org/2000/01/rdf-schema#label> "Hemorragic_Symptoms" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Procoagulants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Procoagulants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/CHEBI_23888> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Procoagulants> <http://www.w3.org/2000/01/rdf-schema#label> "Procoagulants" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/CHEBI_23888> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> <http://www.w3.org/2000/01/rdf-schema#label> "Replacement_Therapies" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Supportive_Therapies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Supportive_Therapies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontobee.org/ontology/OGMS?iri=http://purl.obolibrary.org/obo/OGMS_0000090> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Supportive_Therapies> <http://www.w3.org/2000/01/rdf-schema#label> "Supportive_Therapies" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Surgical_Interventions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Surgical_Interventions> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontobee.org/ontology/OGMS?iri=http://purl.obolibrary.org/obo/OGMS_0000090> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Surgical_Interventions> <http://www.w3.org/2000/01/rdf-schema#label> "Surgical_Interventions" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Thrombotic_Symptoms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Thrombotic_Symptoms> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.jp/bio/4/id/201106050805651670> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/RO_0003302#Thrombotic_Symptoms> <http://www.w3.org/2000/01/rdf-schema#label> "Thrombotic_Symptoms" <https://um.es/graph/Coagulationdisorders> .
+<http://sbmi.uth.tmc.edu/ontology/ochv#C0678943> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://sbmi.uth.tmc.edu/ontology/ochv#C0678943> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.projecthalo.com/aura#Inheritance> <https://um.es/graph/Coagulationdisorders> .
+<http://sbmi.uth.tmc.edu/ontology/ochv#C0678943> <http://www.w3.org/2000/01/rdf-schema#label> "Recessive inheritance" <https://um.es/graph/Coagulationdisorders> .
+<http://www.projecthalo.com/aura#Inheritance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://www.projecthalo.com/aura#Inheritance> <http://www.w3.org/2000/01/rdf-schema#label> "Inheritance" <https://um.es/graph/Coagulationdisorders> .
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Hemophilia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Hemophilia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> <https://um.es/graph/Coagulationdisorders> .
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Hemophilia> <http://www.w3.org/2000/01/rdf-schema#label> "Hemophilia" <https://um.es/graph/Coagulationdisorders> .
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OGMS_0000045> <https://um.es/graph/Coagulationdisorders> .
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> <http://www.w3.org/2000/01/rdf-schema#label> "Hemorrhagic disorder" <https://um.es/graph/Coagulationdisorders> .
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#https://www.informatics.jax.org/disease/DOID:2452> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#https://www.informatics.jax.org/disease/DOID:2452> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OGMS_0000045> <https://um.es/graph/Coagulationdisorders> .
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#https://www.informatics.jax.org/disease/DOID:2452> <http://www.w3.org/2000/01/rdf-schema#label> "Thrombophilia" <https://um.es/graph/Coagulationdisorders> .
+<https://amigo.geneontology.org/amigo/term/GO:0000803> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://amigo.geneontology.org/amigo/term/GO:0000803> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/PBO_0000023> <https://um.es/graph/Coagulationdisorders> .
+<https://amigo.geneontology.org/amigo/term/GO:0000803> <http://www.w3.org/2000/01/rdf-schema#label> "Sexual" <https://um.es/graph/Coagulationdisorders> .
+<https://amigo.geneontology.org/amigo/term/GO:0000805> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://amigo.geneontology.org/amigo/term/GO:0000805> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0000803> <https://um.es/graph/Coagulationdisorders> .
+<https://amigo.geneontology.org/amigo/term/GO:0000805> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome X" <https://um.es/graph/Coagulationdisorders> .
+<https://amigo.geneontology.org/amigo/term/GO:0000806> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://amigo.geneontology.org/amigo/term/GO:0000806> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0000803> <https://um.es/graph/Coagulationdisorders> .
+<https://amigo.geneontology.org/amigo/term/GO:0000806> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome Y" <https://um.es/graph/Coagulationdisorders> .
+<https://amigo.geneontology.org/amigo/term/GO:0030849> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://amigo.geneontology.org/amigo/term/GO:0030849> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/PBO_0000023> <https://um.es/graph/Coagulationdisorders> .
+<https://amigo.geneontology.org/amigo/term/GO:0030849> <http://www.w3.org/2000/01/rdf-schema#label> "Autosomic" <https://um.es/graph/Coagulationdisorders> .
+<https://ontobee.org/ontology/OGMS?iri=http://purl.obolibrary.org/obo/OGMS_0000090> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://ontobee.org/ontology/OGMS?iri=http://purl.obolibrary.org/obo/OGMS_0000090> <http://www.w3.org/2000/01/rdf-schema#label> "Treatment" <https://um.es/graph/Coagulationdisorders> .
+<https://www.informatics.jax.org/vocab/gene_ontology/GO:0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.informatics.jax.org/vocab/gene_ontology/GO:0000001> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.projecthalo.com/aura#Inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://www.informatics.jax.org/vocab/gene_ontology/GO:0000001> <http://www.w3.org/2000/01/rdf-schema#label> "Mitochondrial" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q138955> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q138955> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q138955> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 14" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q220677> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q220677> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q220677> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 17" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q430258> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q430258> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q430258> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 1" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q510786> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q510786> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q510786> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 19" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q540857> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q540857> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q540857> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 6" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q572848> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q572848> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q572848> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 8" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q638893> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q638893> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q638893> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 2" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q657319> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q657319> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q657319> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 7" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q666752> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q666752> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q666752> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 20" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q668633> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q668633> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q668633> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 3" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q742870> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q742870> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q742870> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 16" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q753218> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q753218> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q753218> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 21" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q753805> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q753805> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q753805> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 22" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q765245> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q765245> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q765245> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 15" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q780468> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q780468> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q780468> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 18" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q836605> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q836605> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q836605> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 4" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q840604> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q840604> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q840604> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 9" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q840734> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q840734> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q840734> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 13" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q840737> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q840737> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q840737> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 10" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q840741> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q840741> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q840741> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 5" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q847096> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q847096> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q847096> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 11" <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q847102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q847102> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://amigo.geneontology.org/amigo/term/GO:0030849> <https://um.es/graph/Coagulationdisorders> .
+<https://www.wikidata.org/wiki/Q847102> <http://www.w3.org/2000/01/rdf-schema#label> "Chromosome 12" <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/D004844> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/D004844> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/D004844> <http://www.w3.org/2000/01/rdf-schema#label> "Epistaxis" <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/D011516> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/D011516> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/D011516> <http://www.w3.org/2000/01/rdf-schema#label> "Prothrombin_Complex_Concentrates" <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T001004996> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T001004996> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Thrombotic_Symptoms> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T001004996> <http://www.w3.org/2000/01/rdf-schema#label> "Ischemic_stroke" <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T003049> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T003049> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T003049> <http://www.w3.org/2000/01/rdf-schema#label> "Antithrombin_Concentrates" <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T010625> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T010625> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C25676> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T010625> <http://www.w3.org/2000/01/rdf-schema#label> "Death" <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T016300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T016300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T016300> <http://www.w3.org/2000/01/rdf-schema#label> "Fibrinogen_Concentrates" <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T019331> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T019331> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T019331> <http://www.w3.org/2000/01/rdf-schema#label> "Hemarthrosis" <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T019355> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T019355> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T019355> <http://www.w3.org/2000/01/rdf-schema#label> "Hematomas" <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T019526> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T019526> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T019526> <http://www.w3.org/2000/01/rdf-schema#label> "Gastrointestinal_Hemorrhage" <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T025555> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T025555> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T025555> <http://www.w3.org/2000/01/rdf-schema#label> "Menorrhagia" <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T049334> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T049334> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Thrombotic_Symptoms> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T049334> <http://www.w3.org/2000/01/rdf-schema#label> "Peripheral_Vascular_Diseases" <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T051151> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T051151> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Surgical_Interventions> <https://um.es/graph/Coagulationdisorders> .
+<http://id.nlm.nih.gov/mesh/T051151> <http://www.w3.org/2000/01/rdf-schema#label> "Thrombectomy" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000005961> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000005961> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q220677> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000005961> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/Glanzmannthrombasthenia> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000005961> <http://www.w3.org/2000/01/rdf-schema#label> "ITGA2B" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000057593> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000057593> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q840734> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000057593> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/Factor_VII_Deficiency> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000057593> <http://www.w3.org/2000/01/rdf-schema#label> "F7" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000088926> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000088926> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q836605> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000088926> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/HemophiliaC> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000088926> <http://www.w3.org/2000/01/rdf-schema#label> "F11" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000101981> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000101981> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://amigo.geneontology.org/amigo/term/GO:0000805> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000101981> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/MildhemophiliaB> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000101981> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/ModeratehemophiliaB> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000101981> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/SeverehemophiliaB> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000101981> <http://www.w3.org/2000/01/rdf-schema#label> "F9" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000106991> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000106991> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q840604> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000106991> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/Hereditaryhemorrhagictelangiectasia> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000106991> <http://www.w3.org/2000/01/rdf-schema#label> "ENG" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000110799> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000110799> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q847102> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000110799> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/VonWillebranddisease> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000110799> <http://www.w3.org/2000/01/rdf-schema#label> "VWF" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000115718> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000115718> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q638893> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000115718> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/CongenitalproteinCdeficiency> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000115718> <http://www.w3.org/2000/01/rdf-schema#label> "PROC" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000117601> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000117601> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q430258> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000117601> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/Antithrombin_deficiency> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000117601> <http://www.w3.org/2000/01/rdf-schema#label> "SERPINC1" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000122194> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000122194> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q540857> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000122194> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/Hipoplasminogenemia> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000122194> <http://www.w3.org/2000/01/rdf-schema#label> "PLG" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000124491> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000124491> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q540857> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000124491> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/CongenitalfactorXIIIdeficiency> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000124491> <http://www.w3.org/2000/01/rdf-schema#label> "F13A1" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000126218> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000126218> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q840734> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000126218> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/CongenitalfactorXdeficiency> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000126218> <http://www.w3.org/2000/01/rdf-schema#label> "F10" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000139567> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000139567> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q847102> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000139567> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/Hereditaryhemorrhagictelangiectasia> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000139567> <http://www.w3.org/2000/01/rdf-schema#label> "ACVRL1" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000141646> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000141646> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q780468> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000141646> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/Hereditaryhemorrhagictelangiectasia> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000141646> <http://www.w3.org/2000/01/rdf-schema#label> "SMAD4" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000143278> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000143278> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q430258> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000143278> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/CongenitalfactorXIIIdeficiency> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000143278> <http://www.w3.org/2000/01/rdf-schema#label> "F13B" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000169704> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000169704> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q668633> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000169704> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/BernardSouliersyndrome> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000169704> <http://www.w3.org/2000/01/rdf-schema#label> "GP9" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171557> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171557> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q836605> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171557> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/CongenitalFibrinogenDeficiency> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171557> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/Familialafibrinogenemia> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171557> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/Familialdysfibrinogenemia> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171557> <http://www.w3.org/2000/01/rdf-schema#label> "FGG" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171560> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171560> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q836605> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171560> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/CongenitalFibrinogenDeficiency> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171560> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/Familialafibrinogenemia> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171560> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/Familialdysfibrinogenemia> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171560> <http://www.w3.org/2000/01/rdf-schema#label> "FGA" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171564> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171564> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q836605> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171564> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/CongenitalFibrinogenDeficiency> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171564> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/Familialafibrinogenemia> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171564> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/Familialdysfibrinogenemia> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000171564> <http://www.w3.org/2000/01/rdf-schema#label> "FGB" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000180210> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000180210> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q847096> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000180210> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/CongenitalfactorIIdeficiency> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000180210> <http://www.w3.org/2000/01/rdf-schema#label> "F2" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000184500> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000184500> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q668633> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000184500> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/CongenitalproteinSdeficiency> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000184500> <http://www.w3.org/2000/01/rdf-schema#label> "PROS1" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000185010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000185010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://amigo.geneontology.org/amigo/term/GO:0000805> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000185010> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/MildhemophiliaA> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000185010> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/ModeratehemophiliaA> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000185010> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/SeverehemophiliaA> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000185010> <http://www.w3.org/2000/01/rdf-schema#label> "F8" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000185245> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000185245> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q220677> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000185245> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/BernardSouliersyndrome> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000185245> <http://www.w3.org/2000/01/rdf-schema#label> "GP1BA" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000198734> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000198734> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q430258> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000198734> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/CongenitalfactorVdeficiency> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000198734> <http://www.w3.org/2000/01/rdf-schema#label> "F5" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000203618> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000203618> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q753805> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000203618> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/BernardSouliersyndrome> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000203618> <http://www.w3.org/2000/01/rdf-schema#label> "GP1BB" <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000259207> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000259207> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.wikidata.org/wiki/Q220677> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000259207> <http://purl.obolibrary.org/obo/RO_0003302> <https://um.es/data/Glanzmannthrombasthenia> <https://um.es/graph/Coagulationdisorders> .
+<http://identifiers.org/ensembl/ENSG00000259207> <http://www.w3.org/2000/01/rdf-schema#label> "ITGB3" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/110265006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/110265006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/110265006> <http://www.w3.org/2000/01/rdf-schema#label> "Postoperative_bleeding" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/116861002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/116861002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/116861002> <http://www.w3.org/2000/01/rdf-schema#label> "Plasma_Fresh_Frozen" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/12719002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/12719002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Supportive_Therapies> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/12719002> <http://www.w3.org/2000/01/rdf-schema#label> "Platelet_Transfusions" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/130958001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/130958001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Thrombotic_Symptoms> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/130958001> <http://www.w3.org/2000/01/rdf-schema#label> "Disorder_of _placental_circulatory_function" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/1332556005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/1332556005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Supportive_Therapies> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/1332556005> <http://www.w3.org/2000/01/rdf-schema#label> "Plasma_Infusions" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/271813007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/271813007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/271813007> <http://www.w3.org/2000/01/rdf-schema#label> "Petechiae" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/401186003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/401186003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Thrombotic_Symptoms> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/401186003> <http://www.w3.org/2000/01/rdf-schema#label> "Deep_vein_thrombosis" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/59282003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/59282003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Thrombotic_Symptoms> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/59282003> <http://www.w3.org/2000/01/rdf-schema#label> "Pulmonary_embolism" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/HP_0000969> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/HP_0000969> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bioontology.org/ontology/ICD9CM/780> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/HP_0000969> <http://www.w3.org/2000/01/rdf-schema#label> "Edema" <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/HP_0100749> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/HP_0100749> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bioontology.org/ontology/ICD9CM/780> <https://um.es/graph/Coagulationdisorders> .
+<http://purl.obolibrary.org/obo/HP_0100749> <http://www.w3.org/2000/01/rdf-schema#label> "Chest pain" <https://um.es/graph/Coagulationdisorders> .
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Moderate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Moderate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C25676> <https://um.es/graph/Coagulationdisorders> .
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Moderate> <http://www.w3.org/2000/01/rdf-schema#comment> "They may experience occasional spontaneous bleeding, especially in joints and soft tissues" <https://um.es/graph/Coagulationdisorders> .
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Moderate> <http://www.w3.org/2000/01/rdf-schema#label> "Moderate" <https://um.es/graph/Coagulationdisorders> .
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Severe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Severe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C25676> <https://um.es/graph/Coagulationdisorders> .
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Severe> <http://www.w3.org/2000/01/rdf-schema#comment> "Frequent spontaneous bleeding and a risk of dangerous internal bleeding without treatment." <https://um.es/graph/Coagulationdisorders> .
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Severe> <http://www.w3.org/2000/01/rdf-schema#label> "Severe" <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Fibrinolytics> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00009> <http://www.w3.org/2000/01/rdf-schema#label> "Alteplase" <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00035> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00035> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Procoagulants> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00035> <http://www.w3.org/2000/01/rdf-schema#label> "Desmopressin" <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00036> <http://www.w3.org/2000/01/rdf-schema#label> "Recombinant_Factor_VII" <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00086> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00086> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Fibrinolytics> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00086> <http://www.w3.org/2000/01/rdf-schema#label> "Streptokinase" <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Supportive_Therapies> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00112> <http://www.w3.org/2000/01/rdf-schema#label> "Bevacizumab" <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00302> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00302> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Procoagulants> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00302> <http://www.w3.org/2000/01/rdf-schema#label> "Tranexamic_acid" <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00682> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00682> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Anticoagulants> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00682> <http://www.w3.org/2000/01/rdf-schema#label> "Warfarin" <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00758> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00758> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Antiplatelet> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00758> <http://www.w3.org/2000/01/rdf-schema#label> "Clopidogrel" <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00945> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00945> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Antiplatelet> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB00945> <http://www.w3.org/2000/01/rdf-schema#label> "Aspirin" <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB01109> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB01109> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Anticoagulants> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB01109> <http://www.w3.org/2000/01/rdf-schema#label> "Heparin" <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB09310> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB09310> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB09310> <http://www.w3.org/2000/01/rdf-schema#label> "Recombinant_Factor_XIII" <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB13933> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB13933> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB13933> <http://www.w3.org/2000/01/rdf-schema#label> "Recombinant_Factor_IX" <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB13999> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB13999> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> <https://um.es/graph/Coagulationdisorders> .
+<https://go.drugbank.com/drugs/DB13999> <http://www.w3.org/2000/01/rdf-schema#label> "Recombinant_Factor_VIII" <https://um.es/graph/Coagulationdisorders> .
+<https://hpo.jax.org/browse/term/HP:0000980> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://hpo.jax.org/browse/term/HP:0000980> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bioontology.org/ontology/ICD9CM/780> <https://um.es/graph/Coagulationdisorders> .
+<https://hpo.jax.org/browse/term/HP:0000980> <http://www.w3.org/2000/01/rdf-schema#label> "Pallor" <https://um.es/graph/Coagulationdisorders> .
+<https://hpo.jax.org/browse/term/HP:0002094> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://hpo.jax.org/browse/term/HP:0002094> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bioontology.org/ontology/ICD9CM/780> <https://um.es/graph/Coagulationdisorders> .
+<https://hpo.jax.org/browse/term/HP:0002094> <http://www.w3.org/2000/01/rdf-schema#label> "Dyspnea" <https://um.es/graph/Coagulationdisorders> .
+<https://hpo.jax.org/browse/term/HP:0005268> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://hpo.jax.org/browse/term/HP:0005268> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bioontology.org/ontology/ICD9CM/780> <https://um.es/graph/Coagulationdisorders> .
+<https://hpo.jax.org/browse/term/HP:0005268> <http://www.w3.org/2000/01/rdf-schema#label> "Early fetal demise" <https://um.es/graph/Coagulationdisorders> .
+<https://hpo.jax.org/browse/term/HP:0012378> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://hpo.jax.org/browse/term/HP:0012378> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bioontology.org/ontology/ICD9CM/780> <https://um.es/graph/Coagulationdisorders> .
+<https://hpo.jax.org/browse/term/HP:0012378> <http://www.w3.org/2000/01/rdf-schema#label> "Fatigue" <https://um.es/graph/Coagulationdisorders> .
+<https://hpo.jax.org/browse/term/HP:0012825> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://hpo.jax.org/browse/term/HP:0012825> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C25676> <https://um.es/graph/Coagulationdisorders> .
+<https://hpo.jax.org/browse/term/HP:0012825> <http://www.w3.org/2000/01/rdf-schema#comment> "They generally do not experience spontaneous bleeding and only bleed after surgeries or trauma." <https://um.es/graph/Coagulationdisorders> .
+<https://hpo.jax.org/browse/term/HP:0012825> <http://www.w3.org/2000/01/rdf-schema#label> "Mild" <https://um.es/graph/Coagulationdisorders> .
+<https://id.nlm.nih.gov/mesh/D005169> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://id.nlm.nih.gov/mesh/D005169> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> <https://um.es/graph/Coagulationdisorders> .
+<https://id.nlm.nih.gov/mesh/D005169> <http://www.w3.org/2000/01/rdf-schema#label> "Factor_VIII_Concentrates" <https://um.es/graph/Coagulationdisorders> .
+<https://id.nlm.nih.gov/mesh/D005172> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://id.nlm.nih.gov/mesh/D005172> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> <https://um.es/graph/Coagulationdisorders> .
+<https://id.nlm.nih.gov/mesh/D005172> <http://www.w3.org/2000/01/rdf-schema#label> "Factor_XI_Concentrates" <https://um.es/graph/Coagulationdisorders> .
+<https://id.nlm.nih.gov/mesh/T001089573.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://id.nlm.nih.gov/mesh/T001089573.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Anticoagulants> <https://um.es/graph/Coagulationdisorders> .
+<https://id.nlm.nih.gov/mesh/T001089573.html> <http://www.w3.org/2000/01/rdf-schema#label> "Direct_Oral_Anticoagulants" <https://um.es/graph/Coagulationdisorders> .
+<https://id.nlm.nih.gov/mesh/T014095.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://id.nlm.nih.gov/mesh/T014095.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/RO_0003302#Surgical_Interventions> <https://um.es/graph/Coagulationdisorders> .
+<https://id.nlm.nih.gov/mesh/T014095.html> <http://www.w3.org/2000/01/rdf-schema#label> "Embolization" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Antithrombin_deficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Antithrombin_deficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#https://www.informatics.jax.org/disease/DOID:2452> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Antithrombin_deficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://id.nlm.nih.gov/mesh/T003049> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Antithrombin_deficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB01109> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Antithrombin_deficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://id.nlm.nih.gov/mesh/T001089573.html> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Antithrombin_deficiency> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Antithrombin_deficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/130958001> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Antithrombin_deficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/401186003> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Antithrombin_deficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/59282003> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Antithrombin_deficiency> <http://purl.obolibrary.org/obo/RO_0002200> <https://hpo.jax.org/browse/term/HP:0005268> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Antithrombin_deficiency> <http://purl.obolibrary.org/obo/RO_0002200> <https://hpo.jax.org/browse/term/HP:0012378> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Antithrombin_deficiency> <https://bioportal.bioontology.org/ontologies/has_severity> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Severe> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Antithrombin_deficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "A condition that increases the risk of abnormal blood clot formation due to a lack of antithrombin protein." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Antithrombin_deficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Antithrombin deficiency" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Antithrombin_deficiency> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/en/disease/detail/82> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/BernardSouliersyndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/BernardSouliersyndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/BernardSouliersyndrome> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://purl.bioontology.org/ontology/SNOMEDCT/12719002> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/BernardSouliersyndrome> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/BernardSouliersyndrome> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/D004844> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/BernardSouliersyndrome> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T025555> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/BernardSouliersyndrome> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/BernardSouliersyndrome> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/271813007> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/BernardSouliersyndrome> <https://bioportal.bioontology.org/ontologies/has_severity> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Severe> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/BernardSouliersyndrome> <http://www.w3.org/2000/01/rdf-schema#comment> "A rare platelet disorder causing abnormal bleeding due to defective platelet adhesion." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/BernardSouliersyndrome> <http://www.w3.org/2000/01/rdf-schema#label> "Bernard-Soulier syndrome" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/BernardSouliersyndrome> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/es/disease/detail/274?name=&mode=name> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalFibrinogenDeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalFibrinogenDeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalFibrinogenDeficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://id.nlm.nih.gov/mesh/T016300> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalFibrinogenDeficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalFibrinogenDeficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00302> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalFibrinogenDeficiency> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalFibrinogenDeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019331> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalFibrinogenDeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019526> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalFibrinogenDeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T025555> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalFibrinogenDeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/271813007> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalFibrinogenDeficiency> <https://bioportal.bioontology.org/ontologies/has_severity> <https://hpo.jax.org/browse/term/HP:0012825> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalFibrinogenDeficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "A disorder where fibrinogen levels are abnormally low, causing delayed blood clotting and bleeding episodes." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalFibrinogenDeficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Congenital Fibrinogen Deficiency" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalFibrinogenDeficiency> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=ES&Expert=335> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorIIdeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorIIdeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#https://www.informatics.jax.org/disease/DOID:2452> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorIIdeficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB01109> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorIIdeficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://id.nlm.nih.gov/mesh/T001089573.html> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorIIdeficiency> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorIIdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/130958001> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorIIdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/401186003> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorIIdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/59282003> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorIIdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.obolibrary.org/obo/HP_0000969> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorIIdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <https://hpo.jax.org/browse/term/HP:0005268> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorIIdeficiency> <https://bioportal.bioontology.org/ontologies/has_severity> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Severe> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorIIdeficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "A genetic variant that increases the risk of developing abnormal blood clots (thrombosis)." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorIIdeficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Congenital factor II deficiency" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorIIdeficiency> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.orpha.net/ORDO/Orphanet_325" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorVdeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorVdeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#https://www.informatics.jax.org/disease/DOID:2452> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorVdeficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB01109> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorVdeficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://id.nlm.nih.gov/mesh/T001089573.html> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorVdeficiency> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorVdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T001004996> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorVdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/401186003> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorVdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/59282003> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorVdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.obolibrary.org/obo/HP_0000969> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorVdeficiency> <https://bioportal.bioontology.org/ontologies/has_severity> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Severe> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorVdeficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "A genetic mutation that increases the risk of blood clots due to resistance to activated protein C." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorVdeficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Congenital factor V deficiency" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorVdeficiency> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/en/disease/detail/326> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXIIIdeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXIIIdeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXIIIdeficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXIIIdeficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB09310> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXIIIdeficiency> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXIIIdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019331> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXIIIdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019355> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXIIIdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXIIIdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/271813007> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXIIIdeficiency> <https://bioportal.bioontology.org/ontologies/has_severity> <http://id.nlm.nih.gov/mesh/T010625> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXIIIdeficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "A rare bleeding disorder where blood clots form but are unstable due to a lack of factor XIII." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXIIIdeficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Congenital factor XIII deficiency" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXIIIdeficiency> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/en/disease/detail/331?name=XIII%20Deficiency&mode=name> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXdeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXdeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXdeficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://id.nlm.nih.gov/mesh/D011516> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXdeficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXdeficiency> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019331> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T025555> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXdeficiency> <https://bioportal.bioontology.org/ontologies/has_severity> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Severe> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXdeficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "A clotting disorder due to low or absent factor X, causing prolonged bleeding and easy bruising." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXdeficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Congenital factor X deficiency" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalfactorXdeficiency> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/en/disease/detail/328> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinCdeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinCdeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#https://www.informatics.jax.org/disease/DOID:2452> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinCdeficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00682> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinCdeficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://id.nlm.nih.gov/mesh/T001089573.html> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinCdeficiency> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinCdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T049334> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinCdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/401186003> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinCdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/59282003> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinCdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <https://hpo.jax.org/browse/term/HP:0005268> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinCdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <https://hpo.jax.org/browse/term/HP:0012378> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinCdeficiency> <https://bioportal.bioontology.org/ontologies/has_severity> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Severe> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinCdeficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "A condition that impairs the body's ability to regulate blood clotting, increasing thrombosis risk." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinCdeficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Congenital protein C deficiency" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinCdeficiency> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/en/disease/detail/745> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinSdeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinSdeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#https://www.informatics.jax.org/disease/DOID:2452> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinSdeficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00682> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinSdeficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://id.nlm.nih.gov/mesh/T001089573.html> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinSdeficiency> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinSdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T001004996> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinSdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/401186003> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinSdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/59282003> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinSdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <https://hpo.jax.org/browse/term/HP:0005268> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinSdeficiency> <http://purl.obolibrary.org/obo/RO_0002200> <https://hpo.jax.org/browse/term/HP:0012378> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinSdeficiency> <https://bioportal.bioontology.org/ontologies/has_severity> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Severe> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinSdeficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "A blood clotting disorder caused by reduced levels of protein S, leading to increased clot formation." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinSdeficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Congenital protein S deficiency" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/CongenitalproteinSdeficiency> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/en/disease/detail/743> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Factor_VII_Deficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Factor_VII_Deficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Factor_VII_Deficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Factor_VII_Deficiency> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00036> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Factor_VII_Deficiency> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Factor_VII_Deficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/D004844> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Factor_VII_Deficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019331> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Factor_VII_Deficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019526> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Factor_VII_Deficiency> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T025555> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Factor_VII_Deficiency> <https://bioportal.bioontology.org/ontologies/has_severity> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Moderate> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Factor_VII_Deficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "A rare inherited disorder where blood lacks sufficient factor VII, leading to abnormal bleeding." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Factor_VII_Deficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Factor VII Deficiency" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Factor_VII_Deficiency> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=ES&Expert=329> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialafibrinogenemia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialafibrinogenemia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialafibrinogenemia> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://id.nlm.nih.gov/mesh/T016300> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialafibrinogenemia> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialafibrinogenemia> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00302> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialafibrinogenemia> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialafibrinogenemia> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019355> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialafibrinogenemia> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialafibrinogenemia> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/271813007> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialafibrinogenemia> <http://purl.obolibrary.org/obo/RO_0002200> <https://hpo.jax.org/browse/term/HP:0000980> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialafibrinogenemia> <https://bioportal.bioontology.org/ontologies/has_severity> <http://id.nlm.nih.gov/mesh/T010625> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialafibrinogenemia> <http://www.w3.org/2000/01/rdf-schema#comment> "A rare genetic disorder characterized by the complete absence of fibrinogen, leading to severe bleeding tendencies." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialafibrinogenemia> <http://www.w3.org/2000/01/rdf-schema#label> "Familial afibrinogenemia" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialafibrinogenemia> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=98880> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialdysfibrinogenemia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialdysfibrinogenemia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialdysfibrinogenemia> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://id.nlm.nih.gov/mesh/T016300> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialdysfibrinogenemia> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00302> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialdysfibrinogenemia> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialdysfibrinogenemia> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/130958001> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialdysfibrinogenemia> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/401186003> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialdysfibrinogenemia> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/59282003> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialdysfibrinogenemia> <https://bioportal.bioontology.org/ontologies/has_severity> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Moderate> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialdysfibrinogenemia> <http://www.w3.org/2000/01/rdf-schema#comment> "An inherited disorder where fibrinogen is produced abnormally, leading to either excessive bleeding or clotting." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialdysfibrinogenemia> <http://www.w3.org/2000/01/rdf-schema#label> "Familial dysfibrinogenemia" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Familialdysfibrinogenemia> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/en/disease/detail/98881> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Glanzmannthrombasthenia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Glanzmannthrombasthenia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Glanzmannthrombasthenia> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://purl.bioontology.org/ontology/SNOMEDCT/12719002> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Glanzmannthrombasthenia> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00036> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Glanzmannthrombasthenia> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00302> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Glanzmannthrombasthenia> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Glanzmannthrombasthenia> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/D004844> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Glanzmannthrombasthenia> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T025555> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Glanzmannthrombasthenia> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Glanzmannthrombasthenia> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/271813007> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Glanzmannthrombasthenia> <https://bioportal.bioontology.org/ontologies/has_severity> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Severe> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Glanzmannthrombasthenia> <http://www.w3.org/2000/01/rdf-schema#comment> "A rare genetic platelet disorder that causes abnormal bleeding due to defective platelet aggregation." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Glanzmannthrombasthenia> <http://www.w3.org/2000/01/rdf-schema#label> "Glanzmann thrombasthenia" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Glanzmannthrombasthenia> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/en/disease/detail/849> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Hemophilia> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00302> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://id.nlm.nih.gov/mesh/D005172> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/D004844> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019331> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019355> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019526> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T025555> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/271813007> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <https://bioportal.bioontology.org/ontologies/has_severity> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Moderate> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://www.w3.org/2000/01/rdf-schema#comment> "A milder form of hemophilia caused by factor XI deficiency, affecting blood clotting." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://www.w3.org/2000/01/rdf-schema#comment> "A rare inherited bleeding disorder characterized by reduced levels and/or activity of factor XI (FXI) resulting in moderate bleeding symptoms, usually occurring after trauma or surgery." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://www.w3.org/2000/01/rdf-schema#label> "Congenital factor XI deficiency" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://www.w3.org/2000/01/rdf-schema#label> "Hemophilia_C" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/HemophiliaC> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/en/disease/detail/329> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hereditaryhemorrhagictelangiectasia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hereditaryhemorrhagictelangiectasia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hereditaryhemorrhagictelangiectasia> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00112> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hereditaryhemorrhagictelangiectasia> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00302> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hereditaryhemorrhagictelangiectasia> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://id.nlm.nih.gov/mesh/T014095.html> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hereditaryhemorrhagictelangiectasia> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hereditaryhemorrhagictelangiectasia> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/D004844> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hereditaryhemorrhagictelangiectasia> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019526> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hereditaryhemorrhagictelangiectasia> <http://purl.obolibrary.org/obo/RO_0002200> <https://hpo.jax.org/browse/term/HP:0000980> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hereditaryhemorrhagictelangiectasia> <https://bioportal.bioontology.org/ontologies/has_severity> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Moderate> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hereditaryhemorrhagictelangiectasia> <http://www.w3.org/2000/01/rdf-schema#comment> "A genetic disorder causing abnormal blood vessel formation, leading to frequent bleeding episodes." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hereditaryhemorrhagictelangiectasia> <http://www.w3.org/2000/01/rdf-schema#label> "Hereditary hemorrhagic telangiectasia" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hereditaryhemorrhagictelangiectasia> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/en/disease/detail/774> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hipoplasminogenemia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hipoplasminogenemia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hipoplasminogenemia> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://id.nlm.nih.gov/mesh/T016300> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hipoplasminogenemia> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00302> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hipoplasminogenemia> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hipoplasminogenemia> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T001004996> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hipoplasminogenemia> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/401186003> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hipoplasminogenemia> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/59282003> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hipoplasminogenemia> <https://bioportal.bioontology.org/ontologies/has_severity> <https://hpo.jax.org/browse/term/HP:0012825> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hipoplasminogenemia> <http://www.w3.org/2000/01/rdf-schema#comment> "A disorder where the body cannot break down fibrin clots properly, leading to excessive clot formation." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hipoplasminogenemia> <http://www.w3.org/2000/01/rdf-schema#label> "Hipoplasminogenemia" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/Hipoplasminogenemia> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/es/disease/detail/722> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Mild_Hemophilia> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaA> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaA> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00035> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaA> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00302> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaA> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://id.nlm.nih.gov/mesh/D005169> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaA> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/x-linked-recessive-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaA> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/D004844> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaA> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019355> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaA> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T025555> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaA> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaA> <https://bioportal.bioontology.org/ontologies/has_severity> <https://hpo.jax.org/browse/term/HP:0012825> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaA> <http://www.w3.org/2000/01/rdf-schema#label> "Mild hemophilia A" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaA> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/en/disease/detail/169808> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Mild_Hemophilia> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaB> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaB> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00302> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaB> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB13933> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaB> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/x-linked-recessive-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaB> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/D004844> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaB> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019355> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaB> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T025555> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaB> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaB> <https://bioportal.bioontology.org/ontologies/has_severity> <https://hpo.jax.org/browse/term/HP:0012825> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaB> <http://www.w3.org/2000/01/rdf-schema#label> "Mild hemophilia B" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/MildhemophiliaB> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/en/disease/detail/169799> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Moderate_hemophilia> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaA> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaA> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00035> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaA> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00302> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaA> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB13999> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaA> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://id.nlm.nih.gov/mesh/D005169> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaA> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/x-linked-recessive-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaA> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/D004844> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaA> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019331> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaA> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019355> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaA> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019526> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaA> <https://bioportal.bioontology.org/ontologies/has_severity> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Moderate> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaA> <http://www.w3.org/2000/01/rdf-schema#label> "Moderate hemophilia A" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaA> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/es/disease/detail/169805> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Moderate_hemophilia> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaB> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaB> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00302> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaB> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB13933> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaB> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/x-linked-recessive-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaB> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/D004844> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaB> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019331> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaB> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019355> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaB> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019526> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaB> <https://bioportal.bioontology.org/ontologies/has_severity> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Moderate> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaB> <http://www.w3.org/2000/01/rdf-schema#label> "Moderate hemophilia B" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/ModeratehemophiliaB> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/en/disease/detail/169796> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Severe_hemophilia> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaA> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://id.nlm.nih.gov/mesh/D011516> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaA> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://purl.bioontology.org/ontology/SNOMEDCT/12719002> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaA> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00302> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaA> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB13999> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaA> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://id.nlm.nih.gov/mesh/D005169> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaA> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/x-linked-recessive-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaA> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/D004844> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaA> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019331> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaA> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019355> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaA> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019526> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaA> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaA> <https://bioportal.bioontology.org/ontologies/has_severity> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Severe> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaA> <http://www.w3.org/2000/01/rdf-schema#label> "Severe hemophilia A" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaA> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/en/disease/detail/169802> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Severe_hemophilia> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaB> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://id.nlm.nih.gov/mesh/D011516> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaB> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaB> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00302> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaB> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB13933> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaB> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/x-linked-recessive-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaB> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/D004844> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaB> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019331> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaB> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019355> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaB> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T019526> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaB> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaB> <https://bioportal.bioontology.org/ontologies/has_severity> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Severe> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaB> <http://www.w3.org/2000/01/rdf-schema#label> "Severe hemophilia B" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/SeverehemophiliaB> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/en/disease/detail/169793> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/VonWillebranddisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/VonWillebranddisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/VonWillebranddisease> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/VonWillebranddisease> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00035> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/VonWillebranddisease> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://go.drugbank.com/drugs/DB00302> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/VonWillebranddisease> <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with> <https://id.nlm.nih.gov/mesh/D005169> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/VonWillebranddisease> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/VonWillebranddisease> <http://purl.obolibrary.org/obo/GENO_0000141> <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/VonWillebranddisease> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/D004844> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/VonWillebranddisease> <http://purl.obolibrary.org/obo/RO_0002200> <http://id.nlm.nih.gov/mesh/T025555> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/VonWillebranddisease> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/VonWillebranddisease> <http://purl.obolibrary.org/obo/RO_0002200> <http://purl.bioontology.org/ontology/SNOMEDCT/271813007> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/VonWillebranddisease> <https://bioportal.bioontology.org/ontologies/has_severity> <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Moderate> <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/VonWillebranddisease> <http://www.w3.org/2000/01/rdf-schema#comment> "The most common inherited bleeding disorder, caused by a deficiency of von Willebrand factor, affecting platelet function." <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/VonWillebranddisease> <http://www.w3.org/2000/01/rdf-schema#label> "Von Willebrand disease" <https://um.es/graph/Coagulationdisorders> .
+<https://um.es/data/VonWillebranddisease> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.orpha.net/en/disease/detail/903> <https://um.es/graph/Coagulationdisorders> .
+<https://www.cancer.gov/publications/dictionaries/cancer-terms/def/x-linked-dominant-inheritance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://www.cancer.gov/publications/dictionaries/cancer-terms/def/x-linked-dominant-inheritance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.jp/bio/4/id/200906083778623918> <https://um.es/graph/Coagulationdisorders> .
+<https://www.cancer.gov/publications/dictionaries/cancer-terms/def/x-linked-dominant-inheritance> <http://www.w3.org/2000/01/rdf-schema#label> "X-linked dominant inheritance" <https://um.es/graph/Coagulationdisorders> .
+<https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.jp/bio/4/id/200906083778623918> <https://um.es/graph/Coagulationdisorders> .
+<https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> <http://www.w3.org/2000/01/rdf-schema#label> "Autosomal Dominant Inheritance" <https://um.es/graph/Coagulationdisorders> .
+<https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sbmi.uth.tmc.edu/ontology/ochv#C0678943> <https://um.es/graph/Coagulationdisorders> .
+<https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> <http://www.w3.org/2000/01/rdf-schema#label> "Autosomal Recessive Inheritance" <https://um.es/graph/Coagulationdisorders> .
+<https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/x-linked-recessive-inheritance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/graph/Coagulationdisorders> .
+<https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/x-linked-recessive-inheritance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sbmi.uth.tmc.edu/ontology/ochv#C0678943> <https://um.es/graph/Coagulationdisorders> .
+<https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/x-linked-recessive-inheritance> <http://www.w3.org/2000/01/rdf-schema#label> "X-linked recessive inheritance" <https://um.es/graph/Coagulationdisorders> .

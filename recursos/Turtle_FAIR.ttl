@@ -1,0 +1,1254 @@
+@prefix : <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix SNOMEDCT: <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#> .
+@prefix ontologies: <https://bioportal.bioontology.org/ontologies/> .
+@base <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#> .
+
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/28995006#treated_with
+SNOMEDCT:treated_with rdf:type owl:ObjectProperty ;
+                      rdfs:domain obo:OGMS_0000045 ;
+                      rdfs:range <https://ontobee.org/ontology/OGMS?iri=http://purl.obolibrary.org/obo/OGMS_0000090> .
+
+
+###  http://purl.obolibrary.org/obo/GENO_0000141
+obo:GENO_0000141 rdf:type owl:ObjectProperty ;
+                 rdfs:domain obo:OGMS_0000045 ;
+                 rdfs:range <http://www.projecthalo.com/aura#Inheritance> ;
+                 rdfs:label "inheritance pattern" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002200
+obo:RO_0002200 rdf:type owl:ObjectProperty ;
+               rdfs:domain obo:OGMS_0000045 ;
+               rdfs:range <http://purl.jp/bio/4/id/201106050805651670> ;
+               rdfs:label "has phenotype" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0003302
+obo:RO_0003302 rdf:type owl:ObjectProperty ;
+               rdfs:domain obo:PBO_0000023 ;
+               rdfs:range obo:OGMS_0000045 ;
+               rdfs:label "causes or contributes to condition" .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:domain <https://ontobee.org/ontology/OGMS?iri=http://purl.obolibrary.org/obo/OGMS_0000090> ;
+                      rdfs:range obo:OGMS_0000045 .
+
+
+###  https://bioportal.bioontology.org/ontologies/has_severity
+ontologies:has_severity rdf:type owl:ObjectProperty ;
+                        rdfs:domain obo:OGMS_0000045 ;
+                        rdfs:range obo:NCIT_C25676 .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.bioontology.org/ontology/ICD9CM/780
+<http://purl.bioontology.org/ontology/ICD9CM/780> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.jp/bio/4/id/201106050805651670> ;
+                                                  rdfs:label "General_Symptoms" .
+
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Mild_Hemophilia
+SNOMEDCT:Mild_Hemophilia rdf:type owl:Class ;
+                         rdfs:subClassOf :Hemophilia ;
+                         rdfs:label "Mild_Hemophilia" .
+
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Moderate_hemophilia
+SNOMEDCT:Moderate_hemophilia rdf:type owl:Class ;
+                             rdfs:subClassOf :Hemophilia ;
+                             rdfs:label "Moderate_hemophilia" .
+
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/28995006#Severe_hemophilia
+SNOMEDCT:Severe_hemophilia rdf:type owl:Class ;
+                           rdfs:subClassOf :Hemophilia ;
+                           rdfs:label "Severe_hemophilia" .
+
+
+###  http://purl.jp/bio/4/id/200906083778623918
+<http://purl.jp/bio/4/id/200906083778623918> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://www.projecthalo.com/aura#Inheritance> ;
+                                             rdfs:label "Dominant inheritance" .
+
+
+###  http://purl.jp/bio/4/id/201106050805651670
+<http://purl.jp/bio/4/id/201106050805651670> rdf:type owl:Class ;
+                                             rdfs:label "Symptomatology" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_23888
+obo:CHEBI_23888 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/RO_0003302#Supportive_Therapies> ;
+                rdfs:label "Drug" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C25676
+obo:NCIT_C25676 rdf:type owl:Class ;
+                rdfs:label "Severity" .
+
+
+###  http://purl.obolibrary.org/obo/OGMS_0000045
+obo:OGMS_0000045 rdf:type owl:Class ;
+                 rdfs:label "Disorder" .
+
+
+###  http://purl.obolibrary.org/obo/PBO_0000023
+obo:PBO_0000023 rdf:type owl:Class ;
+                rdfs:label "Gen" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0003302#Anticoagulants
+<http://purl.obolibrary.org/obo/RO_0003302#Anticoagulants> rdf:type owl:Class ;
+                                                           rdfs:subClassOf obo:CHEBI_23888 ;
+                                                           rdfs:label "Anticoagulants" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0003302#Antiplatelet
+<http://purl.obolibrary.org/obo/RO_0003302#Antiplatelet> rdf:type owl:Class ;
+                                                         rdfs:subClassOf obo:CHEBI_23888 ;
+                                                         rdfs:label "Antiplatelet" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0003302#Fibrinolytics
+<http://purl.obolibrary.org/obo/RO_0003302#Fibrinolytics> rdf:type owl:Class ;
+                                                          rdfs:subClassOf obo:CHEBI_23888 ;
+                                                          rdfs:label "Fibrinolytics" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms
+<http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.jp/bio/4/id/201106050805651670> ;
+                                                                rdfs:label "Hemorragic_Symptoms" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0003302#Procoagulants
+<http://purl.obolibrary.org/obo/RO_0003302#Procoagulants> rdf:type owl:Class ;
+                                                          rdfs:subClassOf obo:CHEBI_23888 ;
+                                                          rdfs:label "Procoagulants" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies
+<http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf obo:CHEBI_23888 ;
+                                                                  rdfs:label "Replacement_Therapies" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0003302#Supportive_Therapies
+<http://purl.obolibrary.org/obo/RO_0003302#Supportive_Therapies> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <https://ontobee.org/ontology/OGMS?iri=http://purl.obolibrary.org/obo/OGMS_0000090> ;
+                                                                 rdfs:label "Supportive_Therapies" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0003302#Surgical_Interventions
+<http://purl.obolibrary.org/obo/RO_0003302#Surgical_Interventions> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <https://ontobee.org/ontology/OGMS?iri=http://purl.obolibrary.org/obo/OGMS_0000090> ;
+                                                                   rdfs:label "Surgical_Interventions" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0003302#Thrombotic_Symptoms
+<http://purl.obolibrary.org/obo/RO_0003302#Thrombotic_Symptoms> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.jp/bio/4/id/201106050805651670> ;
+                                                                rdfs:label "Thrombotic_Symptoms" .
+
+
+###  http://sbmi.uth.tmc.edu/ontology/ochv#C0678943
+<http://sbmi.uth.tmc.edu/ontology/ochv#C0678943> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.projecthalo.com/aura#Inheritance> ;
+                                                 rdfs:label "Recessive inheritance" .
+
+
+###  http://www.projecthalo.com/aura#Inheritance
+<http://www.projecthalo.com/aura#Inheritance> rdf:type owl:Class ;
+                                              rdfs:label "Inheritance" .
+
+
+###  http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Hemophilia
+:Hemophilia rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> ;
+            rdfs:label "Hemophilia" .
+
+
+###  http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> rdf:type owl:Class ;
+                                                                                                                              rdfs:subClassOf obo:OGMS_0000045 ;
+                                                                                                                              rdfs:label "Hemorrhagic disorder" .
+
+
+###  http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#https://www.informatics.jax.org/disease/DOID:2452
+<http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#https://www.informatics.jax.org/disease/DOID:2452> rdf:type owl:Class ;
+                                                                                                                           rdfs:subClassOf obo:OGMS_0000045 ;
+                                                                                                                           rdfs:label "Thrombophilia" .
+
+
+###  https://amigo.geneontology.org/amigo/term/GO:0000803
+<https://amigo.geneontology.org/amigo/term/GO:0000803> rdf:type owl:Class ;
+                                                       rdfs:subClassOf obo:PBO_0000023 ;
+                                                       rdfs:label "Sexual" .
+
+
+###  https://amigo.geneontology.org/amigo/term/GO:0000805
+<https://amigo.geneontology.org/amigo/term/GO:0000805> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0000803> ;
+                                                       rdfs:label "Chromosome X" .
+
+
+###  https://amigo.geneontology.org/amigo/term/GO:0000806
+<https://amigo.geneontology.org/amigo/term/GO:0000806> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0000803> ;
+                                                       rdfs:label "Chromosome Y" .
+
+
+###  https://amigo.geneontology.org/amigo/term/GO:0030849
+<https://amigo.geneontology.org/amigo/term/GO:0030849> rdf:type owl:Class ;
+                                                       rdfs:subClassOf obo:PBO_0000023 ;
+                                                       rdfs:label "Autosomic" .
+
+
+###  https://ontobee.org/ontology/OGMS?iri=http://purl.obolibrary.org/obo/OGMS_0000090
+<https://ontobee.org/ontology/OGMS?iri=http://purl.obolibrary.org/obo/OGMS_0000090> rdf:type owl:Class ;
+                                                                                    rdfs:label "Treatment" .
+
+
+###  https://www.informatics.jax.org/vocab/gene_ontology/GO:0000001
+<https://www.informatics.jax.org/vocab/gene_ontology/GO:0000001> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://www.projecthalo.com/aura#Inheritance> ;
+                                                                 rdfs:label "Mitochondrial" .
+
+
+###  https://www.wikidata.org/wiki/Q138955
+<https://www.wikidata.org/wiki/Q138955> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 14" .
+
+
+###  https://www.wikidata.org/wiki/Q220677
+<https://www.wikidata.org/wiki/Q220677> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 17" .
+
+
+###  https://www.wikidata.org/wiki/Q430258
+<https://www.wikidata.org/wiki/Q430258> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 1" .
+
+
+###  https://www.wikidata.org/wiki/Q510786
+<https://www.wikidata.org/wiki/Q510786> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 19" .
+
+
+###  https://www.wikidata.org/wiki/Q540857
+<https://www.wikidata.org/wiki/Q540857> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 6" .
+
+
+###  https://www.wikidata.org/wiki/Q572848
+<https://www.wikidata.org/wiki/Q572848> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 8" .
+
+
+###  https://www.wikidata.org/wiki/Q638893
+<https://www.wikidata.org/wiki/Q638893> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 2" .
+
+
+###  https://www.wikidata.org/wiki/Q657319
+<https://www.wikidata.org/wiki/Q657319> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 7" .
+
+
+###  https://www.wikidata.org/wiki/Q666752
+<https://www.wikidata.org/wiki/Q666752> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 20" .
+
+
+###  https://www.wikidata.org/wiki/Q668633
+<https://www.wikidata.org/wiki/Q668633> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 3" .
+
+
+###  https://www.wikidata.org/wiki/Q742870
+<https://www.wikidata.org/wiki/Q742870> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 16" .
+
+
+###  https://www.wikidata.org/wiki/Q753218
+<https://www.wikidata.org/wiki/Q753218> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 21" .
+
+
+###  https://www.wikidata.org/wiki/Q753805
+<https://www.wikidata.org/wiki/Q753805> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 22" .
+
+
+###  https://www.wikidata.org/wiki/Q765245
+<https://www.wikidata.org/wiki/Q765245> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 15" .
+
+
+###  https://www.wikidata.org/wiki/Q780468
+<https://www.wikidata.org/wiki/Q780468> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 18" .
+
+
+###  https://www.wikidata.org/wiki/Q836605
+<https://www.wikidata.org/wiki/Q836605> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 4" .
+
+
+###  https://www.wikidata.org/wiki/Q840604
+<https://www.wikidata.org/wiki/Q840604> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 9" .
+
+
+###  https://www.wikidata.org/wiki/Q840734
+<https://www.wikidata.org/wiki/Q840734> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 13" .
+
+
+###  https://www.wikidata.org/wiki/Q840737
+<https://www.wikidata.org/wiki/Q840737> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 10" .
+
+
+###  https://www.wikidata.org/wiki/Q840741
+<https://www.wikidata.org/wiki/Q840741> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 5" .
+
+
+###  https://www.wikidata.org/wiki/Q847096
+<https://www.wikidata.org/wiki/Q847096> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 11" .
+
+
+###  https://www.wikidata.org/wiki/Q847102
+<https://www.wikidata.org/wiki/Q847102> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://amigo.geneontology.org/amigo/term/GO:0030849> ;
+                                        rdfs:label "Chromosome 12" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://id.nlm.nih.gov/mesh/D004844
+<http://id.nlm.nih.gov/mesh/D004844> rdf:type owl:NamedIndividual ,
+                                              <http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> ;
+                                     rdfs:label "Epistaxis" .
+
+
+###  http://id.nlm.nih.gov/mesh/D011516
+<http://id.nlm.nih.gov/mesh/D011516> rdf:type owl:NamedIndividual ,
+                                              <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> ;
+                                     rdfs:label "Prothrombin_Complex_Concentrates" .
+
+
+###  http://id.nlm.nih.gov/mesh/T001004996
+<http://id.nlm.nih.gov/mesh/T001004996> rdf:type owl:NamedIndividual ,
+                                                 <http://purl.obolibrary.org/obo/RO_0003302#Thrombotic_Symptoms> ;
+                                        rdfs:label "Ischemic_stroke" .
+
+
+###  http://id.nlm.nih.gov/mesh/T003049
+<http://id.nlm.nih.gov/mesh/T003049> rdf:type owl:NamedIndividual ,
+                                              <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> ;
+                                     rdfs:label "Antithrombin_Concentrates" .
+
+
+###  http://id.nlm.nih.gov/mesh/T010625
+<http://id.nlm.nih.gov/mesh/T010625> rdf:type owl:NamedIndividual ,
+                                              obo:NCIT_C25676 ;
+                                     rdfs:label "Death" .
+
+
+###  http://id.nlm.nih.gov/mesh/T016300
+<http://id.nlm.nih.gov/mesh/T016300> rdf:type owl:NamedIndividual ,
+                                              <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> ;
+                                     rdfs:label "Fibrinogen_Concentrates" .
+
+
+###  http://id.nlm.nih.gov/mesh/T019331
+<http://id.nlm.nih.gov/mesh/T019331> rdf:type owl:NamedIndividual ,
+                                              <http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> ;
+                                     rdfs:label "Hemarthrosis" .
+
+
+###  http://id.nlm.nih.gov/mesh/T019355
+<http://id.nlm.nih.gov/mesh/T019355> rdf:type owl:NamedIndividual ,
+                                              <http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> ;
+                                     rdfs:label "Hematomas" .
+
+
+###  http://id.nlm.nih.gov/mesh/T019526
+<http://id.nlm.nih.gov/mesh/T019526> rdf:type owl:NamedIndividual ,
+                                              <http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> ;
+                                     rdfs:label "Gastrointestinal_Hemorrhage" .
+
+
+###  http://id.nlm.nih.gov/mesh/T025555
+<http://id.nlm.nih.gov/mesh/T025555> rdf:type owl:NamedIndividual ,
+                                              <http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> ;
+                                     rdfs:label "Menorrhagia" .
+
+
+###  http://id.nlm.nih.gov/mesh/T049334
+<http://id.nlm.nih.gov/mesh/T049334> rdf:type owl:NamedIndividual ,
+                                              <http://purl.obolibrary.org/obo/RO_0003302#Thrombotic_Symptoms> ;
+                                     rdfs:label "Peripheral_Vascular_Diseases" .
+
+
+###  http://id.nlm.nih.gov/mesh/T051151
+<http://id.nlm.nih.gov/mesh/T051151> rdf:type owl:NamedIndividual ,
+                                              <http://purl.obolibrary.org/obo/RO_0003302#Surgical_Interventions> ;
+                                     rdfs:label "Thrombectomy" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000005961
+<http://identifiers.org/ensembl/ENSG00000005961> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q220677> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_849> ;
+                                                 rdfs:label "ITGA2B" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000057593
+<http://identifiers.org/ensembl/ENSG00000057593> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q840734> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_327> ;
+                                                 rdfs:label "F7" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000088926
+<http://identifiers.org/ensembl/ENSG00000088926> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q836605> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_329> ;
+                                                 rdfs:label "F11" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000101981
+<http://identifiers.org/ensembl/ENSG00000101981> rdf:type owl:NamedIndividual ,
+                                                          <https://amigo.geneontology.org/amigo/term/GO:0000805> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_169793> ,
+                                                                <http://www.orpha.net/ORDO/Orphanet_169796> ,
+                                                                <http://www.orpha.net/ORDO/Orphanet_169799> ;
+                                                 rdfs:label "F9" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000106991
+<http://identifiers.org/ensembl/ENSG00000106991> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q840604> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_774> ;
+                                                 rdfs:label "ENG" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000110799
+<http://identifiers.org/ensembl/ENSG00000110799> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q847102> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_903> ;
+                                                 rdfs:label "VWF" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000115718
+<http://identifiers.org/ensembl/ENSG00000115718> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q638893> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_745> ;
+                                                 rdfs:label "PROC" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000117601
+<http://identifiers.org/ensembl/ENSG00000117601> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q430258> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_82> ;
+                                                 rdfs:label "SERPINC1" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000122194
+<http://identifiers.org/ensembl/ENSG00000122194> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q540857> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_722> ;
+                                                 rdfs:label "PLG" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000124491
+<http://identifiers.org/ensembl/ENSG00000124491> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q540857> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_331> ;
+                                                 rdfs:label "F13A1" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000126218
+<http://identifiers.org/ensembl/ENSG00000126218> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q840734> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_328> ;
+                                                 rdfs:label "F10" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000139567
+<http://identifiers.org/ensembl/ENSG00000139567> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q847102> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_774> ;
+                                                 rdfs:label "ACVRL1" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000141646
+<http://identifiers.org/ensembl/ENSG00000141646> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q780468> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_774> ;
+                                                 rdfs:label "SMAD4" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000143278
+<http://identifiers.org/ensembl/ENSG00000143278> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q430258> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_331> ;
+                                                 rdfs:label "F13B" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000169704
+<http://identifiers.org/ensembl/ENSG00000169704> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q668633> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_274> ;
+                                                 rdfs:label "GP9" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000171557
+<http://identifiers.org/ensembl/ENSG00000171557> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q836605> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_335> ,
+                                                                <http://www.orpha.net/ORDO/Orphanet_98880> ,
+                                                                <http://www.orpha.net/ORDO/Orphanet_98881> ;
+                                                 rdfs:label "FGG" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000171560
+<http://identifiers.org/ensembl/ENSG00000171560> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q836605> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_335> ,
+                                                                <http://www.orpha.net/ORDO/Orphanet_98880> ,
+                                                                <http://www.orpha.net/ORDO/Orphanet_98881> ;
+                                                 rdfs:label "FGA" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000171564
+<http://identifiers.org/ensembl/ENSG00000171564> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q836605> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_335> ,
+                                                                <http://www.orpha.net/ORDO/Orphanet_98880> ,
+                                                                <http://www.orpha.net/ORDO/Orphanet_98881> ;
+                                                 rdfs:label "FGB" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000180210
+<http://identifiers.org/ensembl/ENSG00000180210> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q847096> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_325> ;
+                                                 rdfs:label "F2" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000184500
+<http://identifiers.org/ensembl/ENSG00000184500> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q668633> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_743> ;
+                                                 rdfs:label "PROS1" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000185010
+<http://identifiers.org/ensembl/ENSG00000185010> rdf:type owl:NamedIndividual ,
+                                                          <https://amigo.geneontology.org/amigo/term/GO:0000805> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_169802> ,
+                                                                <http://www.orpha.net/ORDO/Orphanet_169805> ,
+                                                                <http://www.orpha.net/ORDO/Orphanet_169808> ;
+                                                 rdfs:label "F8" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000185245
+<http://identifiers.org/ensembl/ENSG00000185245> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q220677> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_274> ;
+                                                 rdfs:label "GP1BA" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000198734
+<http://identifiers.org/ensembl/ENSG00000198734> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q430258> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_326> ;
+                                                 rdfs:label "F5" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000203618
+<http://identifiers.org/ensembl/ENSG00000203618> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q753805> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_274> ;
+                                                 rdfs:label "GP1BB" .
+
+
+###  http://identifiers.org/ensembl/ENSG00000259207
+<http://identifiers.org/ensembl/ENSG00000259207> rdf:type owl:NamedIndividual ,
+                                                          <https://www.wikidata.org/wiki/Q220677> ;
+                                                 obo:RO_0003302 <http://www.orpha.net/ORDO/Orphanet_849> ;
+                                                 rdfs:label "ITGB3" .
+
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/110265006
+<http://purl.bioontology.org/ontology/SNOMEDCT/110265006> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> ;
+                                                          rdfs:label "Postoperative_bleeding" .
+
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/116861002
+<http://purl.bioontology.org/ontology/SNOMEDCT/116861002> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> ;
+                                                          rdfs:label "Plasma_Fresh_Frozen" .
+
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/12719002
+<http://purl.bioontology.org/ontology/SNOMEDCT/12719002> rdf:type owl:NamedIndividual ,
+                                                                  <http://purl.obolibrary.org/obo/RO_0003302#Supportive_Therapies> ;
+                                                         rdfs:label "Platelet_Transfusions" .
+
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/130958001
+<http://purl.bioontology.org/ontology/SNOMEDCT/130958001> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/RO_0003302#Thrombotic_Symptoms> ;
+                                                          rdfs:label "Disorder_of _placental_circulatory_function" .
+
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/1332556005
+<http://purl.bioontology.org/ontology/SNOMEDCT/1332556005> rdf:type owl:NamedIndividual ,
+                                                                    <http://purl.obolibrary.org/obo/RO_0003302#Supportive_Therapies> ;
+                                                           rdfs:label "Plasma_Infusions" .
+
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/271813007
+<http://purl.bioontology.org/ontology/SNOMEDCT/271813007> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/RO_0003302#Hemorragic_Symptoms> ;
+                                                          rdfs:label "Petechiae" .
+
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/401186003
+<http://purl.bioontology.org/ontology/SNOMEDCT/401186003> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/RO_0003302#Thrombotic_Symptoms> ;
+                                                          rdfs:label "Deep_vein_thrombosis" .
+
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/59282003
+<http://purl.bioontology.org/ontology/SNOMEDCT/59282003> rdf:type owl:NamedIndividual ,
+                                                                  <http://purl.obolibrary.org/obo/RO_0003302#Thrombotic_Symptoms> ;
+                                                         rdfs:label "Pulmonary_embolism" .
+
+
+###  http://purl.obolibrary.org/obo/HP_0000969
+obo:HP_0000969 rdf:type owl:NamedIndividual ,
+                        <http://purl.bioontology.org/ontology/ICD9CM/780> ;
+               rdfs:label "Edema" .
+
+
+###  http://purl.obolibrary.org/obo/HP_0100749
+obo:HP_0100749 rdf:type owl:NamedIndividual ,
+                        <http://purl.bioontology.org/ontology/ICD9CM/780> ;
+               rdfs:label "Chest pain" .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_169793
+<http://www.orpha.net/ORDO/Orphanet_169793> rdf:type owl:NamedIndividual ,
+                                                     SNOMEDCT:Severe_hemophilia ;
+                                            SNOMEDCT:treated_with <http://id.nlm.nih.gov/mesh/D011516> ,
+                                                                  <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> ,
+                                                                  <https://go.drugbank.com/drugs/DB00302> ,
+                                                                  <https://go.drugbank.com/drugs/DB13933> ;
+                                            obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/x-linked-recessive-inheritance> ;
+                                            obo:RO_0002200 <http://id.nlm.nih.gov/mesh/D004844> ,
+                                                           <http://id.nlm.nih.gov/mesh/T019331> ,
+                                                           <http://id.nlm.nih.gov/mesh/T019355> ,
+                                                           <http://id.nlm.nih.gov/mesh/T019526> ,
+                                                           <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> ;
+                                            ontologies:has_severity :Severe ;
+                                            rdfs:label "Severe hemophilia B" ;
+                                            rdfs:seeAlso <https://www.orpha.net/en/disease/detail/169793> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_169796
+<http://www.orpha.net/ORDO/Orphanet_169796> rdf:type owl:NamedIndividual ,
+                                                     SNOMEDCT:Moderate_hemophilia ;
+                                            SNOMEDCT:treated_with <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> ,
+                                                                  <https://go.drugbank.com/drugs/DB00302> ,
+                                                                  <https://go.drugbank.com/drugs/DB13933> ;
+                                            obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/x-linked-recessive-inheritance> ;
+                                            obo:RO_0002200 <http://id.nlm.nih.gov/mesh/D004844> ,
+                                                           <http://id.nlm.nih.gov/mesh/T019331> ,
+                                                           <http://id.nlm.nih.gov/mesh/T019355> ,
+                                                           <http://id.nlm.nih.gov/mesh/T019526> ;
+                                            ontologies:has_severity :Moderate ;
+                                            rdfs:label "Moderate hemophilia B" ;
+                                            rdfs:seeAlso <https://www.orpha.net/en/disease/detail/169796> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_169799
+<http://www.orpha.net/ORDO/Orphanet_169799> rdf:type owl:NamedIndividual ,
+                                                     SNOMEDCT:Mild_Hemophilia ;
+                                            SNOMEDCT:treated_with <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> ,
+                                                                  <https://go.drugbank.com/drugs/DB00302> ,
+                                                                  <https://go.drugbank.com/drugs/DB13933> ;
+                                            obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/x-linked-recessive-inheritance> ;
+                                            obo:RO_0002200 <http://id.nlm.nih.gov/mesh/D004844> ,
+                                                           <http://id.nlm.nih.gov/mesh/T019355> ,
+                                                           <http://id.nlm.nih.gov/mesh/T025555> ,
+                                                           <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> ;
+                                            ontologies:has_severity <https://hpo.jax.org/browse/term/HP:0012825> ;
+                                            rdfs:label "Mild hemophilia B" ;
+                                            rdfs:seeAlso <https://www.orpha.net/en/disease/detail/169799> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_169802
+<http://www.orpha.net/ORDO/Orphanet_169802> rdf:type owl:NamedIndividual ,
+                                                     SNOMEDCT:Severe_hemophilia ;
+                                            SNOMEDCT:treated_with <http://id.nlm.nih.gov/mesh/D011516> ,
+                                                                  <http://purl.bioontology.org/ontology/SNOMEDCT/12719002> ,
+                                                                  <https://go.drugbank.com/drugs/DB00302> ,
+                                                                  <https://go.drugbank.com/drugs/DB13999> ,
+                                                                  <https://id.nlm.nih.gov/mesh/D005169> ;
+                                            obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/x-linked-recessive-inheritance> ;
+                                            obo:RO_0002200 <http://id.nlm.nih.gov/mesh/D004844> ,
+                                                           <http://id.nlm.nih.gov/mesh/T019331> ,
+                                                           <http://id.nlm.nih.gov/mesh/T019355> ,
+                                                           <http://id.nlm.nih.gov/mesh/T019526> ,
+                                                           <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> ;
+                                            ontologies:has_severity :Severe ;
+                                            rdfs:label "Severe hemophilia A" ;
+                                            rdfs:seeAlso <https://www.orpha.net/en/disease/detail/169802> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_169805
+<http://www.orpha.net/ORDO/Orphanet_169805> rdf:type owl:NamedIndividual ,
+                                                     SNOMEDCT:Moderate_hemophilia ;
+                                            SNOMEDCT:treated_with <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> ,
+                                                                  <https://go.drugbank.com/drugs/DB00035> ,
+                                                                  <https://go.drugbank.com/drugs/DB00302> ,
+                                                                  <https://go.drugbank.com/drugs/DB13999> ,
+                                                                  <https://id.nlm.nih.gov/mesh/D005169> ;
+                                            obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/x-linked-recessive-inheritance> ;
+                                            obo:RO_0002200 <http://id.nlm.nih.gov/mesh/D004844> ,
+                                                           <http://id.nlm.nih.gov/mesh/T019331> ,
+                                                           <http://id.nlm.nih.gov/mesh/T019355> ,
+                                                           <http://id.nlm.nih.gov/mesh/T019526> ;
+                                            ontologies:has_severity :Moderate ;
+                                            rdfs:label "Moderate hemophilia A" ;
+                                            rdfs:seeAlso <https://www.orpha.net/es/disease/detail/169805> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_169808
+<http://www.orpha.net/ORDO/Orphanet_169808> rdf:type owl:NamedIndividual ,
+                                                     SNOMEDCT:Mild_Hemophilia ;
+                                            SNOMEDCT:treated_with <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> ,
+                                                                  <https://go.drugbank.com/drugs/DB00035> ,
+                                                                  <https://go.drugbank.com/drugs/DB00302> ,
+                                                                  <https://id.nlm.nih.gov/mesh/D005169> ;
+                                            obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/x-linked-recessive-inheritance> ;
+                                            obo:RO_0002200 <http://id.nlm.nih.gov/mesh/D004844> ,
+                                                           <http://id.nlm.nih.gov/mesh/T019355> ,
+                                                           <http://id.nlm.nih.gov/mesh/T025555> ,
+                                                           <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> ;
+                                            ontologies:has_severity <https://hpo.jax.org/browse/term/HP:0012825> ;
+                                            rdfs:label "Mild hemophilia A" ;
+                                            rdfs:seeAlso <https://www.orpha.net/en/disease/detail/169808> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_274
+<http://www.orpha.net/ORDO/Orphanet_274> rdf:type owl:NamedIndividual ,
+                                                  <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> ;
+                                         SNOMEDCT:treated_with <http://purl.bioontology.org/ontology/SNOMEDCT/12719002> ;
+                                         obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> ;
+                                         obo:RO_0002200 <http://id.nlm.nih.gov/mesh/D004844> ,
+                                                        <http://id.nlm.nih.gov/mesh/T025555> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/271813007> ;
+                                         ontologies:has_severity :Severe ;
+                                         rdfs:comment "A rare platelet disorder causing abnormal bleeding due to defective platelet adhesion." ;
+                                         rdfs:label "Bernard-Soulier syndrome" ;
+                                         rdfs:seeAlso <https://www.orpha.net/es/disease/detail/274?name=&mode=name> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_325
+<http://www.orpha.net/ORDO/Orphanet_325> rdf:type owl:NamedIndividual ,
+                                                  <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#https://www.informatics.jax.org/disease/DOID:2452> ;
+                                         SNOMEDCT:treated_with <https://go.drugbank.com/drugs/DB01109> ,
+                                                               <https://id.nlm.nih.gov/mesh/T001089573.html> ;
+                                         obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> ;
+                                         obo:RO_0002200 <http://purl.bioontology.org/ontology/SNOMEDCT/130958001> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/401186003> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/59282003> ,
+                                                        obo:HP_0000969 ,
+                                                        <https://hpo.jax.org/browse/term/HP:0005268> ;
+                                         ontologies:has_severity :Severe ;
+                                         rdfs:comment "A genetic variant that increases the risk of developing abnormal blood clots (thrombosis)." ;
+                                         rdfs:label "Congenital factor II deficiency" .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_326
+<http://www.orpha.net/ORDO/Orphanet_326> rdf:type owl:NamedIndividual ,
+                                                  <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#https://www.informatics.jax.org/disease/DOID:2452> ;
+                                         SNOMEDCT:treated_with <https://go.drugbank.com/drugs/DB01109> ,
+                                                               <https://id.nlm.nih.gov/mesh/T001089573.html> ;
+                                         obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> ;
+                                         obo:RO_0002200 <http://id.nlm.nih.gov/mesh/T001004996> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/401186003> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/59282003> ,
+                                                        obo:HP_0000969 ;
+                                         ontologies:has_severity :Severe ;
+                                         rdfs:comment "A genetic mutation that increases the risk of blood clots due to resistance to activated protein C." ;
+                                         rdfs:label "Congenital factor V deficiency" ;
+                                         rdfs:seeAlso <https://www.orpha.net/en/disease/detail/326> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_327
+<http://www.orpha.net/ORDO/Orphanet_327> rdf:type owl:NamedIndividual ,
+                                                  <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> ;
+                                         SNOMEDCT:treated_with <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> ,
+                                                               <https://go.drugbank.com/drugs/DB00036> ;
+                                         obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> ;
+                                         obo:RO_0002200 <http://id.nlm.nih.gov/mesh/D004844> ,
+                                                        <http://id.nlm.nih.gov/mesh/T019331> ,
+                                                        <http://id.nlm.nih.gov/mesh/T019526> ,
+                                                        <http://id.nlm.nih.gov/mesh/T025555> ;
+                                         ontologies:has_severity :Moderate ;
+                                         rdfs:comment "A rare inherited disorder where blood lacks sufficient factor VII, leading to abnormal bleeding." ;
+                                         rdfs:label "Factor VII Deficiency" ;
+                                         rdfs:seeAlso <https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=ES&Expert=329> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_328
+<http://www.orpha.net/ORDO/Orphanet_328> rdf:type owl:NamedIndividual ,
+                                                  <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> ;
+                                         SNOMEDCT:treated_with <http://id.nlm.nih.gov/mesh/D011516> ,
+                                                               <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> ;
+                                         obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> ;
+                                         obo:RO_0002200 <http://id.nlm.nih.gov/mesh/T019331> ,
+                                                        <http://id.nlm.nih.gov/mesh/T025555> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> ;
+                                         ontologies:has_severity :Severe ;
+                                         rdfs:comment "A clotting disorder due to low or absent factor X, causing prolonged bleeding and easy bruising." ;
+                                         rdfs:label "Congenital factor X deficiency" ;
+                                         rdfs:seeAlso <https://www.orpha.net/en/disease/detail/328> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_329
+<http://www.orpha.net/ORDO/Orphanet_329> rdf:type owl:NamedIndividual ,
+                                                  :Hemophilia ,
+                                                  <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> ;
+                                         SNOMEDCT:treated_with <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> ,
+                                                               <https://go.drugbank.com/drugs/DB00302> ,
+                                                               <https://id.nlm.nih.gov/mesh/D005172> ;
+                                         obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> ;
+                                         obo:RO_0002200 <http://id.nlm.nih.gov/mesh/D004844> ,
+                                                        <http://id.nlm.nih.gov/mesh/T019331> ,
+                                                        <http://id.nlm.nih.gov/mesh/T019355> ,
+                                                        <http://id.nlm.nih.gov/mesh/T019526> ,
+                                                        <http://id.nlm.nih.gov/mesh/T025555> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/271813007> ;
+                                         ontologies:has_severity :Moderate ;
+                                         rdfs:comment "A milder form of hemophilia caused by factor XI deficiency, affecting blood clotting." ,
+                                                      "A rare inherited bleeding disorder characterized by reduced levels and/or activity of factor XI (FXI) resulting in moderate bleeding symptoms, usually occurring after trauma or surgery." ;
+                                         rdfs:label "Congenital factor XI deficiency" ,
+                                                    "Hemophilia_C" ;
+                                         rdfs:seeAlso <https://www.orpha.net/en/disease/detail/329> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_331
+<http://www.orpha.net/ORDO/Orphanet_331> rdf:type owl:NamedIndividual ,
+                                                  <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> ;
+                                         SNOMEDCT:treated_with <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> ,
+                                                               <https://go.drugbank.com/drugs/DB09310> ;
+                                         obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> ;
+                                         obo:RO_0002200 <http://id.nlm.nih.gov/mesh/T019331> ,
+                                                        <http://id.nlm.nih.gov/mesh/T019355> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/271813007> ;
+                                         ontologies:has_severity <http://id.nlm.nih.gov/mesh/T010625> ;
+                                         rdfs:comment "A rare bleeding disorder where blood clots form but are unstable due to a lack of factor XIII." ;
+                                         rdfs:label "Congenital factor XIII deficiency" ;
+                                         rdfs:seeAlso <https://www.orpha.net/en/disease/detail/331?name=XIII%20Deficiency&mode=name> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_335
+<http://www.orpha.net/ORDO/Orphanet_335> rdf:type owl:NamedIndividual ,
+                                                  <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> ;
+                                         SNOMEDCT:treated_with <http://id.nlm.nih.gov/mesh/T016300> ,
+                                                               <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> ,
+                                                               <https://go.drugbank.com/drugs/DB00302> ;
+                                         obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> ;
+                                         obo:RO_0002200 <http://id.nlm.nih.gov/mesh/T019331> ,
+                                                        <http://id.nlm.nih.gov/mesh/T019526> ,
+                                                        <http://id.nlm.nih.gov/mesh/T025555> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/271813007> ;
+                                         ontologies:has_severity <https://hpo.jax.org/browse/term/HP:0012825> ;
+                                         rdfs:comment "A disorder where fibrinogen levels are abnormally low, causing delayed blood clotting and bleeding episodes." ;
+                                         rdfs:label "Congenital Fibrinogen Deficiency" ;
+                                         rdfs:seeAlso <https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=ES&Expert=335> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_722
+<http://www.orpha.net/ORDO/Orphanet_722> rdf:type owl:NamedIndividual ,
+                                                  <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> ;
+                                         SNOMEDCT:treated_with <http://id.nlm.nih.gov/mesh/T016300> ,
+                                                               <https://go.drugbank.com/drugs/DB00302> ;
+                                         obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> ;
+                                         obo:RO_0002200 <http://id.nlm.nih.gov/mesh/T001004996> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/401186003> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/59282003> ;
+                                         ontologies:has_severity <https://hpo.jax.org/browse/term/HP:0012825> ;
+                                         rdfs:comment "A disorder where the body cannot break down fibrin clots properly, leading to excessive clot formation." ;
+                                         rdfs:label "Hipoplasminogenemia" ;
+                                         rdfs:seeAlso <https://www.orpha.net/es/disease/detail/722> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_743
+<http://www.orpha.net/ORDO/Orphanet_743> rdf:type owl:NamedIndividual ,
+                                                  <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#https://www.informatics.jax.org/disease/DOID:2452> ;
+                                         SNOMEDCT:treated_with <https://go.drugbank.com/drugs/DB00682> ,
+                                                               <https://id.nlm.nih.gov/mesh/T001089573.html> ;
+                                         obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> ;
+                                         obo:RO_0002200 <http://id.nlm.nih.gov/mesh/T001004996> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/401186003> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/59282003> ,
+                                                        <https://hpo.jax.org/browse/term/HP:0005268> ,
+                                                        <https://hpo.jax.org/browse/term/HP:0012378> ;
+                                         ontologies:has_severity :Severe ;
+                                         rdfs:comment "A blood clotting disorder caused by reduced levels of protein S, leading to increased clot formation." ;
+                                         rdfs:label "Congenital protein S deficiency" ;
+                                         rdfs:seeAlso <https://www.orpha.net/en/disease/detail/743> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_745
+<http://www.orpha.net/ORDO/Orphanet_745> rdf:type owl:NamedIndividual ,
+                                                  <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#https://www.informatics.jax.org/disease/DOID:2452> ;
+                                         SNOMEDCT:treated_with <https://go.drugbank.com/drugs/DB00682> ,
+                                                               <https://id.nlm.nih.gov/mesh/T001089573.html> ;
+                                         obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> ;
+                                         obo:RO_0002200 <http://id.nlm.nih.gov/mesh/T049334> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/401186003> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/59282003> ,
+                                                        <https://hpo.jax.org/browse/term/HP:0005268> ,
+                                                        <https://hpo.jax.org/browse/term/HP:0012378> ;
+                                         ontologies:has_severity :Severe ;
+                                         rdfs:comment "A condition that impairs the body's ability to regulate blood clotting, increasing thrombosis risk." ;
+                                         rdfs:label "Congenital protein C deficiency" ;
+                                         rdfs:seeAlso <https://www.orpha.net/en/disease/detail/745> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_774
+<http://www.orpha.net/ORDO/Orphanet_774> rdf:type owl:NamedIndividual ,
+                                                  <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> ;
+                                         SNOMEDCT:treated_with <https://go.drugbank.com/drugs/DB00112> ,
+                                                               <https://go.drugbank.com/drugs/DB00302> ,
+                                                               <https://id.nlm.nih.gov/mesh/T014095.html> ;
+                                         obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> ;
+                                         obo:RO_0002200 <http://id.nlm.nih.gov/mesh/D004844> ,
+                                                        <http://id.nlm.nih.gov/mesh/T019526> ,
+                                                        <https://hpo.jax.org/browse/term/HP:0000980> ;
+                                         ontologies:has_severity :Moderate ;
+                                         rdfs:comment "A genetic disorder causing abnormal blood vessel formation, leading to frequent bleeding episodes." ;
+                                         rdfs:label "Hereditary hemorrhagic telangiectasia" ;
+                                         rdfs:seeAlso <https://www.orpha.net/en/disease/detail/774> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_82
+<http://www.orpha.net/ORDO/Orphanet_82> rdf:type owl:NamedIndividual ,
+                                                 <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#https://www.informatics.jax.org/disease/DOID:2452> ;
+                                        owl:sameAs <https://um.es/data/Antithrombin_deficiency> ;
+                                        SNOMEDCT:treated_with <http://id.nlm.nih.gov/mesh/T003049> ,
+                                                              <https://go.drugbank.com/drugs/DB01109> ,
+                                                              <https://id.nlm.nih.gov/mesh/T001089573.html> ;
+                                        obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> ;
+                                        obo:RO_0002200 <http://purl.bioontology.org/ontology/SNOMEDCT/130958001> ,
+                                                       <http://purl.bioontology.org/ontology/SNOMEDCT/401186003> ,
+                                                       <http://purl.bioontology.org/ontology/SNOMEDCT/59282003> ,
+                                                       <https://hpo.jax.org/browse/term/HP:0005268> ,
+                                                       <https://hpo.jax.org/browse/term/HP:0012378> ;
+                                        ontologies:has_severity :Severe ;
+                                        rdfs:comment "A condition that increases the risk of abnormal blood clot formation due to a lack of antithrombin protein." ;
+                                        rdfs:label "Antithrombin deficiency" ;
+                                        rdfs:seeAlso <https://www.orpha.net/en/disease/detail/82> .
+
+
+###  https://um.es/data/Antithrombin_deficiency
+
+###  http://www.orpha.net/ORDO/Orphanet_849
+<http://www.orpha.net/ORDO/Orphanet_849> rdf:type owl:NamedIndividual ,
+                                                  <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> ;
+                                         SNOMEDCT:treated_with <http://purl.bioontology.org/ontology/SNOMEDCT/12719002> ,
+                                                               <https://go.drugbank.com/drugs/DB00036> ,
+                                                               <https://go.drugbank.com/drugs/DB00302> ;
+                                         obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> ;
+                                         obo:RO_0002200 <http://id.nlm.nih.gov/mesh/D004844> ,
+                                                        <http://id.nlm.nih.gov/mesh/T025555> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/271813007> ;
+                                         ontologies:has_severity :Severe ;
+                                         rdfs:comment "A rare genetic platelet disorder that causes abnormal bleeding due to defective platelet aggregation." ;
+                                         rdfs:label "Glanzmann thrombasthenia" ;
+                                         rdfs:seeAlso <https://www.orpha.net/en/disease/detail/849> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_903
+<http://www.orpha.net/ORDO/Orphanet_903> rdf:type owl:NamedIndividual ,
+                                                  <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> ;
+                                         SNOMEDCT:treated_with <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> ,
+                                                               <https://go.drugbank.com/drugs/DB00035> ,
+                                                               <https://go.drugbank.com/drugs/DB00302> ,
+                                                               <https://id.nlm.nih.gov/mesh/D005169> ;
+                                         obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> ,
+                                                          <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> ;
+                                         obo:RO_0002200 <http://id.nlm.nih.gov/mesh/D004844> ,
+                                                        <http://id.nlm.nih.gov/mesh/T025555> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/271813007> ;
+                                         ontologies:has_severity :Moderate ;
+                                         rdfs:comment "The most common inherited bleeding disorder, caused by a deficiency of von Willebrand factor, affecting platelet function." ;
+                                         rdfs:label "Von Willebrand disease" ;
+                                         rdfs:seeAlso <https://www.orpha.net/en/disease/detail/903> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_98880
+<http://www.orpha.net/ORDO/Orphanet_98880> rdf:type owl:NamedIndividual ,
+                                                    <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> ;
+                                           SNOMEDCT:treated_with <http://id.nlm.nih.gov/mesh/T016300> ,
+                                                                 <http://purl.bioontology.org/ontology/SNOMEDCT/116861002> ,
+                                                                 <https://go.drugbank.com/drugs/DB00302> ;
+                                           obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> ;
+                                           obo:RO_0002200 <http://id.nlm.nih.gov/mesh/T019355> ,
+                                                          <http://purl.bioontology.org/ontology/SNOMEDCT/110265006> ,
+                                                          <http://purl.bioontology.org/ontology/SNOMEDCT/271813007> ,
+                                                          <https://hpo.jax.org/browse/term/HP:0000980> ;
+                                           ontologies:has_severity <http://id.nlm.nih.gov/mesh/T010625> ;
+                                           rdfs:comment "A rare genetic disorder characterized by the complete absence of fibrinogen, leading to severe bleeding tendencies." ;
+                                           rdfs:label "Familial afibrinogenemia" ;
+                                           rdfs:seeAlso <https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=98880> .
+
+
+###  http://www.orpha.net/ORDO/Orphanet_98881
+<http://www.orpha.net/ORDO/Orphanet_98881> rdf:type owl:NamedIndividual ,
+                                                    <http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#http://purl.bioontology.org/ontology/MEDDRA/10019009> ;
+                                           SNOMEDCT:treated_with <http://id.nlm.nih.gov/mesh/T016300> ,
+                                                                 <https://go.drugbank.com/drugs/DB00302> ;
+                                           obo:GENO_0000141 <https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> ;
+                                           obo:RO_0002200 <http://purl.bioontology.org/ontology/SNOMEDCT/130958001> ,
+                                                          <http://purl.bioontology.org/ontology/SNOMEDCT/401186003> ,
+                                                          <http://purl.bioontology.org/ontology/SNOMEDCT/59282003> ;
+                                           ontologies:has_severity :Moderate ;
+                                           rdfs:comment "An inherited disorder where fibrinogen is produced abnormally, leading to either excessive bleeding or clotting." ;
+                                           rdfs:label "Familial dysfibrinogenemia" ;
+                                           rdfs:seeAlso <https://www.orpha.net/en/disease/detail/98881> .
+
+
+###  http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Moderate
+:Moderate rdf:type owl:NamedIndividual ,
+                   obo:NCIT_C25676 ;
+          rdfs:comment "They may experience occasional spontaneous bleeding, especially in joints and soft tissues" ;
+          rdfs:label "Moderate" .
+
+
+###  http://www.semanticweb.org/ilove/ontologies/2025/0/untitled-ontology-6#Severe
+:Severe rdf:type owl:NamedIndividual ,
+                 obo:NCIT_C25676 ;
+        rdfs:comment "Frequent spontaneous bleeding and a risk of dangerous internal bleeding without treatment." ;
+        rdfs:label "Severe" .
+
+
+###  https://go.drugbank.com/drugs/DB00009
+<https://go.drugbank.com/drugs/DB00009> rdf:type owl:NamedIndividual ,
+                                                 <http://purl.obolibrary.org/obo/RO_0003302#Fibrinolytics> ;
+                                        rdfs:label "Alteplase" .
+
+
+###  https://go.drugbank.com/drugs/DB00035
+<https://go.drugbank.com/drugs/DB00035> rdf:type owl:NamedIndividual ,
+                                                 <http://purl.obolibrary.org/obo/RO_0003302#Procoagulants> ;
+                                        rdfs:label "Desmopressin" .
+
+
+###  https://go.drugbank.com/drugs/DB00036
+<https://go.drugbank.com/drugs/DB00036> rdf:type owl:NamedIndividual ,
+                                                 <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> ;
+                                        rdfs:label "Recombinant_Factor_VII" .
+
+
+###  https://go.drugbank.com/drugs/DB00086
+<https://go.drugbank.com/drugs/DB00086> rdf:type owl:NamedIndividual ,
+                                                 <http://purl.obolibrary.org/obo/RO_0003302#Fibrinolytics> ;
+                                        rdfs:label "Streptokinase" .
+
+
+###  https://go.drugbank.com/drugs/DB00112
+<https://go.drugbank.com/drugs/DB00112> rdf:type owl:NamedIndividual ,
+                                                 <http://purl.obolibrary.org/obo/RO_0003302#Supportive_Therapies> ;
+                                        rdfs:label "Bevacizumab" .
+
+
+###  https://go.drugbank.com/drugs/DB00302
+<https://go.drugbank.com/drugs/DB00302> rdf:type owl:NamedIndividual ,
+                                                 <http://purl.obolibrary.org/obo/RO_0003302#Procoagulants> ;
+                                        rdfs:label "Tranexamic_acid" .
+
+
+###  https://go.drugbank.com/drugs/DB00682
+<https://go.drugbank.com/drugs/DB00682> rdf:type owl:NamedIndividual ,
+                                                 <http://purl.obolibrary.org/obo/RO_0003302#Anticoagulants> ;
+                                        rdfs:label "Warfarin" .
+
+
+###  https://go.drugbank.com/drugs/DB00758
+<https://go.drugbank.com/drugs/DB00758> rdf:type owl:NamedIndividual ,
+                                                 <http://purl.obolibrary.org/obo/RO_0003302#Antiplatelet> ;
+                                        rdfs:label "Clopidogrel" .
+
+
+###  https://go.drugbank.com/drugs/DB00945
+<https://go.drugbank.com/drugs/DB00945> rdf:type owl:NamedIndividual ,
+                                                 <http://purl.obolibrary.org/obo/RO_0003302#Antiplatelet> ;
+                                        rdfs:label "Aspirin" .
+
+
+###  https://go.drugbank.com/drugs/DB01109
+<https://go.drugbank.com/drugs/DB01109> rdf:type owl:NamedIndividual ,
+                                                 <http://purl.obolibrary.org/obo/RO_0003302#Anticoagulants> ;
+                                        rdfs:label "Heparin" .
+
+
+###  https://go.drugbank.com/drugs/DB09310
+<https://go.drugbank.com/drugs/DB09310> rdf:type owl:NamedIndividual ,
+                                                 <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> ;
+                                        rdfs:label "Recombinant_Factor_XIII" .
+
+
+###  https://go.drugbank.com/drugs/DB13933
+<https://go.drugbank.com/drugs/DB13933> rdf:type owl:NamedIndividual ,
+                                                 <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> ;
+                                        rdfs:label "Recombinant_Factor_IX" .
+
+
+###  https://go.drugbank.com/drugs/DB13999
+<https://go.drugbank.com/drugs/DB13999> rdf:type owl:NamedIndividual ,
+                                                 <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> ;
+                                        rdfs:label "Recombinant_Factor_VIII" .
+
+
+###  https://hpo.jax.org/browse/term/HP:0000980
+<https://hpo.jax.org/browse/term/HP:0000980> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.bioontology.org/ontology/ICD9CM/780> ;
+                                             rdfs:label "Pallor" .
+
+
+###  https://hpo.jax.org/browse/term/HP:0002094
+<https://hpo.jax.org/browse/term/HP:0002094> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.bioontology.org/ontology/ICD9CM/780> ;
+                                             rdfs:label "Dyspnea" .
+
+
+###  https://hpo.jax.org/browse/term/HP:0005268
+<https://hpo.jax.org/browse/term/HP:0005268> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.bioontology.org/ontology/ICD9CM/780> ;
+                                             rdfs:label "Early fetal demise" .
+
+
+###  https://hpo.jax.org/browse/term/HP:0012378
+<https://hpo.jax.org/browse/term/HP:0012378> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.bioontology.org/ontology/ICD9CM/780> ;
+                                             rdfs:label "Fatigue" .
+
+
+###  https://hpo.jax.org/browse/term/HP:0012825
+<https://hpo.jax.org/browse/term/HP:0012825> rdf:type owl:NamedIndividual ,
+                                                      obo:NCIT_C25676 ;
+                                             rdfs:comment "They generally do not experience spontaneous bleeding and only bleed after surgeries or trauma." ;
+                                             rdfs:label "Mild" .
+
+
+###  https://id.nlm.nih.gov/mesh/D005169
+<https://id.nlm.nih.gov/mesh/D005169> rdf:type owl:NamedIndividual ,
+                                               <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> ;
+                                      rdfs:label "Factor_VIII_Concentrates" .
+
+
+###  https://id.nlm.nih.gov/mesh/D005172
+<https://id.nlm.nih.gov/mesh/D005172> rdf:type owl:NamedIndividual ,
+                                               <http://purl.obolibrary.org/obo/RO_0003302#Replacement_Therapies> ;
+                                      rdfs:label "Factor_XI_Concentrates" .
+
+
+###  https://id.nlm.nih.gov/mesh/T001089573.html
+<https://id.nlm.nih.gov/mesh/T001089573.html> rdf:type owl:NamedIndividual ,
+                                                       <http://purl.obolibrary.org/obo/RO_0003302#Anticoagulants> ;
+                                              rdfs:label "Direct_Oral_Anticoagulants" .
+
+
+###  https://id.nlm.nih.gov/mesh/T014095.html
+<https://id.nlm.nih.gov/mesh/T014095.html> rdf:type owl:NamedIndividual ,
+                                                    <http://purl.obolibrary.org/obo/RO_0003302#Surgical_Interventions> ;
+                                           rdfs:label "Embolization" .
+
+
+###  https://um.es/data/Antithrombin_deficiency
+<https://um.es/data/Antithrombin_deficiency> rdf:type owl:NamedIndividual .
+
+
+###  https://www.cancer.gov/publications/dictionaries/cancer-terms/def/x-linked-dominant-inheritance
+<https://www.cancer.gov/publications/dictionaries/cancer-terms/def/x-linked-dominant-inheritance> rdf:type owl:NamedIndividual ,
+                                                                                                           <http://purl.jp/bio/4/id/200906083778623918> ;
+                                                                                                  rdfs:label "X-linked dominant inheritance" .
+
+
+###  https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance
+<https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-dominant-inheritance> rdf:type owl:NamedIndividual ,
+                                                                                                                   <http://purl.jp/bio/4/id/200906083778623918> ;
+                                                                                                          rdfs:label "Autosomal Dominant Inheritance" .
+
+
+###  https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance
+<https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/autosomal-recessive-inheritance> rdf:type owl:NamedIndividual ,
+                                                                                                                    <http://sbmi.uth.tmc.edu/ontology/ochv#C0678943> ;
+                                                                                                           rdfs:label "Autosomal Recessive Inheritance" .
+
+
+###  https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/x-linked-recessive-inheritance
+<https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/x-linked-recessive-inheritance> rdf:type owl:NamedIndividual ,
+                                                                                                                   <http://sbmi.uth.tmc.edu/ontology/ochv#C0678943> ;
+                                                                                                          rdfs:label "X-linked recessive inheritance" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
