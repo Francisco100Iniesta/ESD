@@ -1,0 +1,358 @@
+---
+title: "Consultas_Sparql_ESD"
+author: "Francisco Iniesta Martínez"
+date: "2025-04-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+ 
+# Carga de Consultas 
+
+Para ello  usaremos el end point que hemos generado en blazegraph para nuestra base de datos :
+
+
+**http://dayhoff.inf.um.es:3041/blazegraph/namespace/migrafo/sparql"**
+
+
+
+```{r}
+library(SPARQL)
+library(DT)
+
+# Endpoint SPARQL
+endpoint <- "http://dayhoff.inf.um.es:3041/blazegraph/namespace/migrafo/sparql"
+
+# Consulta 1: Enfermedades por severidad
+query1 <- "
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX bioportal: <https://bioportal.bioontology.org/ontologies/>
+SELECT 
+  (STR(?enfermedadLabel) AS ?nombreEnfermedad)
+  (STR(?enfermedad) AS ?enfermedadURI)
+  (STR(?severidadLabel) AS ?Severidad)
+WHERE {
+  ?enfermedad bioportal:has_severity ?severidad .
+  ?enfermedad rdfs:label ?enfermedadLabel .
+  ?severidad rdfs:label ?severidadLabel .
+}
+ORDER BY ?Severidad
+"
+
+# Consulta 2: Individuos por clase
+query2 <- "
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT 
+  (STR(?rootLabel) AS ?TopLevelClass)
+  (STR(COUNT(DISTINCT ?individual)) AS ?NumberOfIndividuals)
+WHERE {
+  ?individual rdf:type owl:NamedIndividual .
+  ?individual rdf:type ?class .
+  FILTER(?class != owl:NamedIndividual)
+  OPTIONAL { ?class rdfs:subClassOf* ?root . }
+  ?root rdfs:label ?rootLabel .
+  FILTER(?rootLabel IN (
+    \"Disorder\", 
+    \"Gen\", 
+    \"Inheritance\", 
+    \"Severity\", 
+    \"Symptomatology\", 
+    \"Treatment\"
+  ))
+}
+GROUP BY ?rootLabel
+ORDER BY DESC(xsd:integer(?NumberOfIndividuals))
+"
+query3 <- "
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX snomed: <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#>
+
+SELECT 
+  (STR(?label1) AS ?enfermedad1)
+  (STR(?label2) AS ?enfermedad2)
+  (GROUP_CONCAT(DISTINCT STR(?tratamientoLabel); separator=\", \") AS ?tratamientos)
+  (GROUP_CONCAT(DISTINCT STR(?t); separator=\", \") AS ?tratamientosURI)
+WHERE {
+  ?e1 snomed:treated_with ?t .
+  ?e2 snomed:treated_with ?t .
+  ?e1 rdfs:label ?label1 .
+  ?e2 rdfs:label ?label2 .
+  ?t rdfs:label ?tratamientoLabel .
+
+  FILTER(?e1 != ?e2)
+  FILTER(STR(?label1) < STR(?label2))
+}
+GROUP BY ?label1 ?label2
+HAVING (COUNT(DISTINCT ?t) >= 2)
+ORDER BY ?enfermedad1
+"
+
+
+query4 <- "PREFIX obo: <http://purl.obolibrary.org/obo/>\n
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n
+SELECT \n
+  (STR(?enfermedadLabel) AS ?nombreEnfermedad)\n
+  (STR(?subclaseLabel) AS ?Subclase)\n
+  ?enfermedad\n
+  (GROUP_CONCAT(STR(?genLabel); separator=\", \") AS ?genes)\n
+WHERE {\n
+  ?gen obo:RO_0003302 ?enfermedad .\n
+  ?gen rdfs:label ?genLabel .\n
+  ?enfermedad rdfs:label ?enfermedadLabel .\n
+  ?enfermedad rdf:type ?subclase .\n
+  ?subclase rdfs:label ?subclaseLabel .\n
+  FILTER(?subclase != <http://www.w3.org/2002/07/owl#NamedIndividual>)\n
+}\n
+GROUP BY ?enfermedad ?enfermedadLabel ?subclaseLabel\n
+HAVING (COUNT(?gen) >= 2)\n
+ORDER BY ?nombreEnfermedad"
+
+
+
+query5 <- "PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX snomed: <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT 
+  (COALESCE(STR(?diseaseLabel), STR(?disease)) AS ?Disease)
+  (GROUP_CONCAT(DISTINCT COALESCE(STR(?geneLabel), STR(?gene)); separator=\", \") AS ?Genes)
+  (GROUP_CONCAT(DISTINCT COALESCE(STR(?drugLabel), STR(?drug)); separator=\", \") AS ?Drugs)
+  (GROUP_CONCAT(DISTINCT COALESCE(STR(?inheritanceLabel), STR(?inheritance)); separator=\", \") AS ?InheritanceTypes)
+WHERE {
+  ?gene obo:RO_0003302 ?disease .
+  OPTIONAL { ?gene rdfs:label ?geneLabel }
+  OPTIONAL { ?disease rdfs:label ?diseaseLabel }
+  OPTIONAL {
+    ?disease snomed:treated_with ?drug .
+    OPTIONAL { ?drug rdfs:label ?drugLabel }
+  }
+  OPTIONAL {
+    ?disease obo:GENO_0000141 ?inheritance .
+    OPTIONAL { ?inheritance rdfs:label ?inheritanceLabel }
+  }
+}
+GROUP BY ?disease ?diseaseLabel
+HAVING (COUNT(DISTINCT ?gene) >= 2)"
+
+
+query6 <- "PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX snomed: <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#>
+PREFIX bp: <https://bioportal.bioontology.org/ontologies/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT 
+  (STR(?diseaseLabel) AS ?Disease)
+  (GROUP_CONCAT(DISTINCT STR(?geneLabel); separator=\", \") AS ?Genes)
+  (GROUP_CONCAT(DISTINCT STR(?drugLabel); separator=\", \") AS ?Drugs)
+  (STR(?severityLabel) AS ?Severity)
+  (STR(?typeLabel) AS ?Type)
+WHERE {
+  ?gene obo:RO_0003302 ?disease .
+  ?disease bp:has_severity ?severity .
+  ?disease snomed:treated_with ?drug .
+  OPTIONAL { ?gene rdfs:label ?geneLabel }
+  OPTIONAL { ?disease rdfs:label ?diseaseLabel }
+  OPTIONAL { ?drug rdfs:label ?drugLabel }
+  OPTIONAL { ?severity rdfs:label ?severityLabel }
+  OPTIONAL {
+    ?disease rdf:type ?type .
+    ?type rdfs:label ?typeLabel .
+  }
+  FILTER regex(str(?severityLabel), \"severe\", \"i\")
+}
+GROUP BY ?diseaseLabel ?severityLabel ?typeLabel"
+
+
+query7 <- "PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX snomed: <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT 
+  (COALESCE(STR(?drugLabel), STR(?drug)) AS ?Drug)
+  (GROUP_CONCAT(DISTINCT COALESCE(STR(?diseaseLabel), STR(?disease)); separator=\", \") AS ?Diseases)
+  (GROUP_CONCAT(DISTINCT COALESCE(STR(?phenotypeLabel), STR(?phenotype)); separator=\", \") AS ?Phenotypes)
+WHERE {
+  ?disease snomed:treated_with ?drug .
+  OPTIONAL { ?drug rdfs:label ?drugLabel }
+  OPTIONAL { ?disease rdfs:label ?diseaseLabel }
+  OPTIONAL {
+    ?disease obo:RO_0002200 ?phenotype .
+    OPTIONAL { ?phenotype rdfs:label ?phenotypeLabel }
+  }
+}
+GROUP BY ?drug ?drugLabel
+HAVING (COUNT(DISTINCT ?disease) >= 3)"
+
+query8 <- "
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX snomed: <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#>
+PREFIX bp: <https://bioportal.bioontology.org/ontologies/>
+
+SELECT 
+  (STR(?diseaseLabel) AS ?Enfermedad)
+  (STR(?disease) AS ?EnfermedadURI)
+  (COALESCE(STR(?severityLabel), \"Sin dato\") AS ?Severidad)
+  (GROUP_CONCAT(DISTINCT STR(?geneLabel); separator=\", \") AS ?Genes)
+  (GROUP_CONCAT(DISTINCT STR(?drugLabel); separator=\", \") AS ?Farmacos)
+  (GROUP_CONCAT(DISTINCT STR(?drug); separator=\", \") AS ?FarmacosURI)
+  (GROUP_CONCAT(DISTINCT STR(?inheritanceLabel); separator=\", \") AS ?Herencia)
+  (GROUP_CONCAT(DISTINCT STR(?symptomLabel); separator=\", \") AS ?Sintomas)
+  (GROUP_CONCAT(DISTINCT STR(?symptom); separator=\", \") AS ?SintomasURI)
+  (GROUP_CONCAT(DISTINCT STR(?typeLabel); separator=\", \") AS ?Categoria)
+WHERE {
+  ?disease rdf:type ?clase .
+  ?clase rdfs:subClassOf* <http://purl.obolibrary.org/obo/OGMS_0000045> .
+  ?disease a owl:NamedIndividual .
+  ?disease rdfs:label ?diseaseLabel .
+
+  OPTIONAL {
+    ?disease bp:has_severity ?severity .
+    ?severity rdfs:label ?severityLabel .
+  }
+
+  OPTIONAL {
+    ?gene obo:RO_0003302 ?disease .
+    OPTIONAL { ?gene rdfs:label ?geneLabel }
+  }
+
+  OPTIONAL {
+    ?disease snomed:treated_with ?drug .
+    OPTIONAL { ?drug rdfs:label ?drugLabel }
+  }
+
+  OPTIONAL {
+    ?disease obo:GENO_0000141 ?inheritance .
+    OPTIONAL { ?inheritance rdfs:label ?inheritanceLabel }
+  }
+
+  OPTIONAL {
+    ?disease obo:RO_0002200 ?symptom .
+    OPTIONAL { ?symptom rdfs:label ?symptomLabel }
+  }
+
+  OPTIONAL {
+    ?disease rdf:type ?subType .
+    ?subType rdfs:subClassOf* ?superType .
+    FILTER(?superType != owl:NamedIndividual)
+    OPTIONAL { ?superType rdfs:label ?typeLabel }
+    FILTER(?typeLabel != \"Disorder\")
+  }
+}
+GROUP BY ?disease ?diseaseLabel ?severityLabel
+ORDER BY LCASE(?Enfermedad)
+"
+
+
+```
+
+
+## Extraemos los resultados para facilitar la representación
+```{r}
+res1 <- SPARQL(endpoint, query1)$results
+res2 <- SPARQL(endpoint, query2)$results
+res3 <- SPARQL(endpoint, query3)$results
+res4 <- SPARQL(endpoint, query4)$results
+res5 <- SPARQL(endpoint, query5)$results
+res6 <- SPARQL(endpoint, query6)$results
+res7 <- SPARQL(endpoint, query7)$results
+res8 <- SPARQL(endpoint, query8)$results
+```
+
+
+
+## Consulta 1: Enfermedades por severidad
+
+Devuelve todas las enfermedades, sus URIs y las clasifica por nivel de severidad.
+Esto facilita una visión general del grado de gravedad asignado a cada enfermedad y permite evaluar cual es la severidad media en las enfermedades más relevantes de la coagulación.
+
+```{r}
+datatable(res1, options = list(scrollY = 400, scrollX = TRUE, paging = FALSE),
+          caption = "Consulta 1: Enfermedades clasificadas por severidad")
+```
+
+## Consulta 2: Número de individuos por clase
+
+Cuenta el número de individuos clasificados bajo distintas clases padre (como Gen, Tratamiento o Síntoma).
+Sirve para analizar cómo está distribuido el conocimiento en la base de datos, asegurarnos de que todos los individuos propuestos para la red estan incluidos (98) y evaluar áreas con menor representación.
+
+```{r}
+datatable(res2, options = list(scrollY = 400, scrollX = TRUE, paging = FALSE),
+          caption = "Consulta 2: Número de individuos por clase padre")
+```
+
+## Consulta 3: Enfermedades con más de 1 tratamiento en común
+
+Identifica pares de enfermedades que comparten al menos dos tratamientos, mostrando los nombres y URIs de los fármacos agrupados.
+Esto permite descubrir relaciones terapéuticas entre enfermedades, útiles para investigaciones sobre tratamientos comunes o incluso reposicionamiento farmacológico.
+
+
+
+```{r}
+datatable(res3, options = list(scrollY = 400, scrollX = TRUE, paging = FALSE),
+          caption = "Consulta 3: Enfermedades con tratamientos comunes")
+```
+
+## Consulta 4: Enfermedades con más de 2 genes implicados y clase
+
+Recupera enfermedades que tienen asociados dos o más genes, incluyendo los nombres agrupados de dichos genes.
+Ayuda a detectar enfermedades genéticamente complejas y puede ayudar a descubrir si subtipos de patologías concretos,  se relacionan con mayor complejidad genética.
+
+```{r}
+datatable(res4, options = list(scrollY = 400, scrollX = TRUE, paging = FALSE),
+          caption = "Consulta 4: Enfermedades con 2 o más genes implicados")
+```
+
+## Consulta 5: Enfermedades con más de 2 genes implicados, fármacos y herencia
+
+Esta consulta extiende la información de la anterior, dado que devuelve un perfil de enfermedades con más de dos genes implicados, mostrando también fármacos utilizados y tipo de herencia genética.
+
+Esto es bastante útil, dado que permite estudiar enfermedades desde una perspectiva que fusiona genética-farmacológía y  permite comprender mejor su modo de transmisión.
+```{r}
+datatable(res5, options = list(scrollY = 400, scrollX = TRUE, paging = FALSE),
+          caption = "Consulta 5: Genes, fármacos y herencia por enfermedad")
+```
+
+## Consulta 6: Genes y fármacos en enfermedades severas
+
+Filtra enfermedades con pronóstico grave y muestra para cada una: sus genes implicados, fármacos prescritos y su clase dentro del modelo ontológico.
+Es  útil para buscar genes y fármacos en investigaciones donde existan patologías con impacto grave en pacientes y poder evaluar posibles reposicionamientos en tratamientos.
+```{r}
+datatable(res6, options = list(scrollY = 400, scrollX = TRUE, paging = FALSE),
+          caption = "Consulta 6: Genes y fármacos en enfermedades severas")
+```
+
+## Consulta 7: Fármacos usados en al menos 3 enfermedades y sus síntomas
+
+Muestra fármacos utilizados en al menos tres enfermedades distintas, junto a los síntomas asociados a dichas enfermedades.
+Permite explorar el rango de uso de ciertos tratamientos y su impacto sobre distintas condiciones, lo cual es interesante para estudios donde se evalue la eficiencia terapéutica.
+
+
+
+```{r}
+datatable(res7, options = list(scrollY = 400, scrollX = TRUE, paging = FALSE),
+          caption = "Consulta 7: Fármacos comunes y síntomas relacionados")
+```
+
+## Consulta 8: Tabla resumen por enfermedad
+
+Genera una tabla resumen para cada enfermedad, incluyendo URI, severidad, genes, tratamientos y su Uri, tipo de herencia, síntomas junto a su Uri y categoría ontológica.
+Proporciona una visión total por enfermedad, facilitando el acceso a las fuentes. Esto la hace ideal para exploración, informes médicos o sistemas de consulta biomédica.
+
+
+
+```{r}
+datatable(res8, options = list(scrollY = 400, scrollX = TRUE, paging = FALSE),
+          caption = "Consulta 8: Resumen completo por enfermedad")
+```
+
+
+
+
