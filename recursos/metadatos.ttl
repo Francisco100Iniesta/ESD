@@ -1,47 +1,50 @@
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix cc: <http://creativecommons.org/ns#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix sd:     <http://www.w3.org/ns/sparql-service-description#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+@prefix cc:     <http://creativecommons.org/ns#> .
+@prefix vcard:  <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 
 <https://um.es/data/umu/coagulationDisordersDataset> a dcat:Dataset ;
-    rdfs:label "Dataset FAIR sobre enfermedades de la coagulación - Universidad de Murcia"@es ;
-    dct:description "Conjunto de datos RDF sobre enfermedades de la coagulación hereditaria, con enlaces a Orphanet y DOID."@es ;
-    dct:publisher <https://www.um.es/> ;
-    dct:creator <https://um.es/people/franciscoiniesta> ;
+    rdfs:label        "Dataset FAIR sobre enfermedades de la coagulación - Universidad de Murcia"@es ;
+    dct:description   "Conjunto de datos RDF sobre enfermedades de la coagulación hereditaria, con enlaces a Orphanet y DOID."@es ;
+    dct:publisher     <https://www.um.es/> ;
+    dct:creator       <https://um.es/people/franciscoiniesta> ;
     dcat:contactPoint <https://um.es/people/franciscoiniesta> ;
-    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dcat:distribution <https://um.es/data/umu/distribution/coagulation-nquads> ,
+    dct:license       <http://creativecommons.org/licenses/by/4.0/> ;
+    dcat:distribution <https://um.es/data/umu/distribution/coagulation-nquads>,
                       <https://um.es/data/umu/distribution/coagulation-sparql> ;
     foaf:primaryTopic <https://um.es/data/Antithrombin_deficiency> ;
-    sd:namedGraph <https://um.es/graph/coagulationdisorders> ;
-    dct:issued "2025-04-03"^^xsd:date ;
+    sd:namedGraph     <https://um.es/graph/Coagulationdisorders> ;
+    dct:issued        "2025-04-03"^^xsd:date ;
     prov:wasGeneratedBy <https://um.es/data/umu/workflow/coagulation-data-gen> .
 
 <https://um.es/people/franciscoiniesta> a foaf:Person, vcard:Individual ;
-    foaf:name "Francisco Iniesta" ;
-    foaf:mbox <mailto:francisco.iniestam1@um.es> ;
-    vcard:fn "Francisco Iniesta" ;
+    foaf:name      "Francisco Iniesta" ;
+    foaf:mbox      <mailto:francisco.iniestam1@um.es> ;
+    vcard:fn       "Francisco Iniesta" ;
     vcard:hasEmail <mailto:francisco.iniestam1@um.es> .
 
 <https://um.es/data/umu/distribution/coagulation-nquads> a dcat:Distribution ;
     dcat:downloadURL <http://dayhoff.inf.um.es/files/coagulation_disorders.nq> ;
-    dct:format <http://publications.europa.eu/resource/authority/file-type/NQ> ;
-    dct:license <http://creativecommons.org/licenses/by/4.0/> .
+    dct:format       <http://publications.europa.eu/resource/authority/file-type/NQ> ;
+    dct:license      <http://creativecommons.org/licenses/by/4.0/> .
 
-<https://um.es/data/umu/distribution/coagulation-sparql> a dcat:Distribution ;
-    dcat:accessURL <http://dayhoff.inf.um.es:3041/blazegraph/namespace/umu/sparql> ;
-    dct:license <http://creativecommons.org/licenses/by/4.0/> .
+<https://um.es/data/umu/distribution/coagulation-sparql> 
+    a dcat:Distribution, sd:Service ;
+    dcat:accessURL    <http://dayhoff.inf.um.es:3041/blazegraph/namespace/migrafo/sparql> ;
+    sd:defaultGraph   <https://um.es/graph/Coagulationdisorders> ;
+    dct:license       <http://creativecommons.org/licenses/by/4.0/> .
 
-<https://um.es/graph/coagulationdisorders> a sd:NamedGraph ;
-    rdfs:label "Grafo RDF sobre trastornos de la coagulación"@es ;
+<https://um.es/graph/Coagulationdisorders> a sd:NamedGraph ;
+    rdfs:label      "Grafo RDF sobre trastornos de la coagulación"@es ;
     dct:description "Grafo RDF con entidades biomédicas FAIR (enfermedades genéticas) modeladas por la UMU"@es .
 
 <http://creativecommons.org/licenses/by/4.0/> a cc:License ;
-    cc:permits cc:Distribution, cc:Reproduction, cc:DerivativeWorks ;
-    cc:requires cc:Notice ;
-    cc:legalcode <https://creativecommons.org/licenses/by/4.0/legalcode> .
+    cc:permits    cc:Distribution, cc:Reproduction, cc:DerivativeWorks ;
+    cc:requires   cc:Notice ;
+    cc:legalcode  <https://creativecommons.org/licenses/by/4.0/legalcode> .
