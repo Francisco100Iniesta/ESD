@@ -25,66 +25,62 @@ library(DT)
 
 # Endpoint SPARQL
 endpoint <- "http://dayhoff.inf.um.es:3041/blazegraph/namespace/migrafo/sparql"
-
-# Consulta 1: Enfermedades por severidad
 query1 <- "
+PREFIX um:   <https://um.es/data/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX bioportal: <https://bioportal.bioontology.org/ontologies/>
-SELECT 
-  (STR(?enfermedadLabel) AS ?nombreEnfermedad)
-  (STR(?enfermedad) AS ?enfermedadURI)
-  (STR(?severidadLabel) AS ?Severidad)
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+
+SELECT
+  (?enfLabel AS ?nombreEnfermedad)
+  (?enfExt   AS ?enfermedadURI)
+  (?sevLabel AS ?Severidad)
 WHERE {
-  ?enfermedad bioportal:has_severity ?severidad .
-  ?enfermedad rdfs:label ?enfermedadLabel .
-  ?severidad rdfs:label ?severidadLabel .
+  ?enf   um:Has_severity ?sev .
+  ?enf   rdfs:label      ?enfLabel .
+  ?sev   rdfs:label      ?sevLabel .
+  ?enf   owl:sameAs      ?enfExt .
 }
 ORDER BY ?Severidad
 "
-
-# Consulta 2: Individuos por clase
 query2 <- "
-PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX owl:  <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX um:  <https://um.es/data/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-SELECT 
-  (STR(?rootLabel) AS ?TopLevelClass)
-  (STR(COUNT(DISTINCT ?individual)) AS ?NumberOfIndividuals)
+
+SELECT
+  (?rootLabel AS ?TopLevelClass)
+  (COUNT(DISTINCT ?individual) AS ?NumberOfIndividuals)
 WHERE {
-  ?individual rdf:type owl:NamedIndividual .
-  ?individual rdf:type ?class .
-  FILTER(?class != owl:NamedIndividual)
-  OPTIONAL { ?class rdfs:subClassOf* ?root . }
-  ?root rdfs:label ?rootLabel .
-  FILTER(?rootLabel IN (
-    \"Disorder\", 
-    \"Gen\", 
-    \"Inheritance\", 
-    \"Severity\", 
-    \"Symptomatology\", 
-    \"Treatment\"
-  ))
+  ?individual rdf:type          owl:NamedIndividual .
+  ?individual rdf:type          ?class .
+  FILTER(?class != owl:NamedIndividual) .
+  OPTIONAL { ?class rdfs:subClassOf* ?root } .
+  ?root rdfs:label              ?rootLabel .
+  FILTER(?rootLabel IN ('Disorder','Gen','Inheritance','Severity','Symptomatology','Treatment'))
 }
 GROUP BY ?rootLabel
 ORDER BY DESC(xsd:integer(?NumberOfIndividuals))
 "
+
 query3 <- "
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX snomed: <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#>
+PREFIX um:  <https://um.es/data/>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
-SELECT 
-  (STR(?label1) AS ?enfermedad1)
-  (STR(?label2) AS ?enfermedad2)
-  (GROUP_CONCAT(DISTINCT STR(?tratamientoLabel); separator=\", \") AS ?tratamientos)
-  (GROUP_CONCAT(DISTINCT STR(?t); separator=\", \") AS ?tratamientosURI)
+SELECT
+  (?label1 AS ?enfermedad1)
+  (?label2 AS ?enfermedad2)
+  (GROUP_CONCAT(DISTINCT STR(?tratLabel); separator=', ') AS ?tratamientos)
+  (GROUP_CONCAT(DISTINCT ?tExt; separator=', ')            AS ?tratamientosURI)
 WHERE {
-  ?e1 snomed:treated_with ?t .
-  ?e2 snomed:treated_with ?t .
-  ?e1 rdfs:label ?label1 .
-  ?e2 rdfs:label ?label2 .
-  ?t rdfs:label ?tratamientoLabel .
-
+  ?e1 um:Treated_with ?t .
+  ?e2 um:Treated_with ?t .
+  ?e1 rdfs:label       ?label1 .
+  ?e2 rdfs:label       ?label2 .
+  ?t  rdfs:label       ?tratLabel .
+  ?t  owl:sameAs       ?tExt .
   FILTER(?e1 != ?e2)
   FILTER(STR(?label1) < STR(?label2))
 }
@@ -93,164 +89,175 @@ HAVING (COUNT(DISTINCT ?t) >= 2)
 ORDER BY ?enfermedad1
 "
 
-
-query4 <- "PREFIX obo: <http://purl.obolibrary.org/obo/>\n
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n
-SELECT \n
-  (STR(?enfermedadLabel) AS ?nombreEnfermedad)\n
-  (STR(?subclaseLabel) AS ?Subclase)\n
-  ?enfermedad\n
-  (GROUP_CONCAT(STR(?genLabel); separator=\", \") AS ?genes)\n
-WHERE {\n
-  ?gen obo:RO_0003302 ?enfermedad .\n
-  ?gen rdfs:label ?genLabel .\n
-  ?enfermedad rdfs:label ?enfermedadLabel .\n
-  ?enfermedad rdf:type ?subclase .\n
-  ?subclase rdfs:label ?subclaseLabel .\n
-  FILTER(?subclase != <http://www.w3.org/2002/07/owl#NamedIndividual>)\n
-}\n
-GROUP BY ?enfermedad ?enfermedadLabel ?subclaseLabel\n
-HAVING (COUNT(?gen) >= 2)\n
-ORDER BY ?nombreEnfermedad"
-
-
-
-query5 <- "PREFIX obo: <http://purl.obolibrary.org/obo/>
-PREFIX snomed: <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#>
+query4 <- "
+PREFIX um:   <https://um.es/data/>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT 
-  (COALESCE(STR(?diseaseLabel), STR(?disease)) AS ?Disease)
-  (GROUP_CONCAT(DISTINCT COALESCE(STR(?geneLabel), STR(?gene)); separator=\", \") AS ?Genes)
-  (GROUP_CONCAT(DISTINCT COALESCE(STR(?drugLabel), STR(?drug)); separator=\", \") AS ?Drugs)
-  (GROUP_CONCAT(DISTINCT COALESCE(STR(?inheritanceLabel), STR(?inheritance)); separator=\", \") AS ?InheritanceTypes)
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+
+SELECT
+  (?enferLabel AS ?nombreEnfermedad)
+  (?subLabel   AS ?Subclase)
+  (?enfExt     AS ?enfermedadURI)
+  (GROUP_CONCAT(DISTINCT ?genLabel; separator=\", \") AS ?genes)
 WHERE {
-  ?gene obo:RO_0003302 ?disease .
-  OPTIONAL { ?gene rdfs:label ?geneLabel }
-  OPTIONAL { ?disease rdfs:label ?diseaseLabel }
-  OPTIONAL {
-    ?disease snomed:treated_with ?drug .
-    OPTIONAL { ?drug rdfs:label ?drugLabel }
-  }
-  OPTIONAL {
-    ?disease obo:GENO_0000141 ?inheritance .
-    OPTIONAL { ?inheritance rdfs:label ?inheritanceLabel }
-  }
+  ?gen um:Causes ?enf ;
+       rdfs:label ?genLabel .
+  ?enf rdfs:label ?enferLabel ;
+        owl:sameAs ?enfExt ;
+        rdf:type ?sub .
+  ?sub rdfs:label ?subLabel .
+  FILTER(?sub != owl:NamedIndividual)
 }
-GROUP BY ?disease ?diseaseLabel
-HAVING (COUNT(DISTINCT ?gene) >= 2)"
-
-
-query6 <- "PREFIX obo: <http://purl.obolibrary.org/obo/>
-PREFIX snomed: <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#>
-PREFIX bp: <https://bioportal.bioontology.org/ontologies/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-SELECT DISTINCT 
-  (STR(?diseaseLabel) AS ?Disease)
-  (GROUP_CONCAT(DISTINCT STR(?geneLabel); separator=\", \") AS ?Genes)
-  (GROUP_CONCAT(DISTINCT STR(?drugLabel); separator=\", \") AS ?Drugs)
-  (STR(?severityLabel) AS ?Severity)
-  (STR(?typeLabel) AS ?Type)
-WHERE {
-  ?gene obo:RO_0003302 ?disease .
-  ?disease bp:has_severity ?severity .
-  ?disease snomed:treated_with ?drug .
-  OPTIONAL { ?gene rdfs:label ?geneLabel }
-  OPTIONAL { ?disease rdfs:label ?diseaseLabel }
-  OPTIONAL { ?drug rdfs:label ?drugLabel }
-  OPTIONAL { ?severity rdfs:label ?severityLabel }
-  OPTIONAL {
-    ?disease rdf:type ?type .
-    ?type rdfs:label ?typeLabel .
-  }
-  FILTER regex(str(?severityLabel), \"severe\", \"i\")
-}
-GROUP BY ?diseaseLabel ?severityLabel ?typeLabel"
-
-
-query7 <- "PREFIX obo: <http://purl.obolibrary.org/obo/>
-PREFIX snomed: <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT 
-  (COALESCE(STR(?drugLabel), STR(?drug)) AS ?Drug)
-  (GROUP_CONCAT(DISTINCT COALESCE(STR(?diseaseLabel), STR(?disease)); separator=\", \") AS ?Diseases)
-  (GROUP_CONCAT(DISTINCT COALESCE(STR(?phenotypeLabel), STR(?phenotype)); separator=\", \") AS ?Phenotypes)
-WHERE {
-  ?disease snomed:treated_with ?drug .
-  OPTIONAL { ?drug rdfs:label ?drugLabel }
-  OPTIONAL { ?disease rdfs:label ?diseaseLabel }
-  OPTIONAL {
-    ?disease obo:RO_0002200 ?phenotype .
-    OPTIONAL { ?phenotype rdfs:label ?phenotypeLabel }
-  }
-}
-GROUP BY ?drug ?drugLabel
-HAVING (COUNT(DISTINCT ?disease) >= 3)"
-
-query8 <- "
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX obo: <http://purl.obolibrary.org/obo/>
-PREFIX snomed: <http://purl.bioontology.org/ontology/SNOMEDCT/28995006#>
-PREFIX bp: <https://bioportal.bioontology.org/ontologies/>
-
-SELECT 
-  (STR(?diseaseLabel) AS ?Enfermedad)
-  (STR(?disease) AS ?EnfermedadURI)
-  (COALESCE(STR(?severityLabel), \"Sin dato\") AS ?Severidad)
-  (GROUP_CONCAT(DISTINCT STR(?geneLabel); separator=\", \") AS ?Genes)
-  (GROUP_CONCAT(DISTINCT STR(?drugLabel); separator=\", \") AS ?Farmacos)
-  (GROUP_CONCAT(DISTINCT STR(?drug); separator=\", \") AS ?FarmacosURI)
-  (GROUP_CONCAT(DISTINCT STR(?inheritanceLabel); separator=\", \") AS ?Herencia)
-  (GROUP_CONCAT(DISTINCT STR(?symptomLabel); separator=\", \") AS ?Sintomas)
-  (GROUP_CONCAT(DISTINCT STR(?symptom); separator=\", \") AS ?SintomasURI)
-  (GROUP_CONCAT(DISTINCT STR(?typeLabel); separator=\", \") AS ?Categoria)
-WHERE {
-  ?disease rdf:type ?clase .
-  ?clase rdfs:subClassOf* <http://purl.obolibrary.org/obo/OGMS_0000045> .
-  ?disease a owl:NamedIndividual .
-  ?disease rdfs:label ?diseaseLabel .
-
-  OPTIONAL {
-    ?disease bp:has_severity ?severity .
-    ?severity rdfs:label ?severityLabel .
-  }
-
-  OPTIONAL {
-    ?gene obo:RO_0003302 ?disease .
-    OPTIONAL { ?gene rdfs:label ?geneLabel }
-  }
-
-  OPTIONAL {
-    ?disease snomed:treated_with ?drug .
-    OPTIONAL { ?drug rdfs:label ?drugLabel }
-  }
-
-  OPTIONAL {
-    ?disease obo:GENO_0000141 ?inheritance .
-    OPTIONAL { ?inheritance rdfs:label ?inheritanceLabel }
-  }
-
-  OPTIONAL {
-    ?disease obo:RO_0002200 ?symptom .
-    OPTIONAL { ?symptom rdfs:label ?symptomLabel }
-  }
-
-  OPTIONAL {
-    ?disease rdf:type ?subType .
-    ?subType rdfs:subClassOf* ?superType .
-    FILTER(?superType != owl:NamedIndividual)
-    OPTIONAL { ?superType rdfs:label ?typeLabel }
-    FILTER(?typeLabel != \"Disorder\")
-  }
-}
-GROUP BY ?disease ?diseaseLabel ?severityLabel
-ORDER BY LCASE(?Enfermedad)
+GROUP BY ?enf ?enferLabel ?subLabel ?enfExt
+HAVING (COUNT(DISTINCT ?gen) >= 2)
+ORDER BY ?nombreEnfermedad
 "
 
+query5 <- "
+PREFIX um:  <https://um.es/data/>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
+SELECT
+  (COALESCE(?diseaseLabel, ?diseaseExt) AS ?Disease)
+  (GROUP_CONCAT(DISTINCT COALESCE(?geneLabel, ?geneExt); separator=', ') AS ?Genes)
+  (GROUP_CONCAT(DISTINCT COALESCE(?drugLabel, ?drugExt); separator=', ') AS ?Drugs)
+  (GROUP_CONCAT(DISTINCT COALESCE(?inheritanceLabel, ?inheritExt); separator=', ') AS ?InheritanceTypes)
+WHERE {
+  ?gene um:Causes              ?disease .
+  OPTIONAL { ?gene      rdfs:label   ?geneLabel }
+  OPTIONAL { ?gene      owl:sameAs   ?geneExt }
+  OPTIONAL { ?disease   rdfs:label   ?diseaseLabel }
+  OPTIONAL { ?disease   owl:sameAs   ?diseaseExt }
+  OPTIONAL {
+    ?disease um:Treated_with    ?drug .
+    OPTIONAL { ?drug  rdfs:label        ?drugLabel }
+    OPTIONAL { ?drug  owl:sameAs        ?drugExt }
+  }
+  OPTIONAL {
+    ?disease um:InheritancePattern ?inheritance .
+    OPTIONAL { ?inheritance rdfs:label      ?inheritanceLabel }
+    OPTIONAL { ?inheritance owl:sameAs      ?inheritExt }
+  }
+}
+GROUP BY ?diseaseLabel ?diseaseExt
+HAVING (COUNT(DISTINCT ?gene) >= 2)
+"
+query6 <- "
+PREFIX um:   <https://um.es/data/>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT
+  (?diseaseLabel                        AS ?Disease)
+  (GROUP_CONCAT(DISTINCT ?geneLabel;    separator=\", \") AS ?Genes)
+  (GROUP_CONCAT(DISTINCT ?drugLabel;    separator=\", \") AS ?Drugs)
+  (?severityLabel                       AS ?Severity)
+  (?typeLabel                           AS ?Type)
+WHERE {
+  ?gene    um:Causes        ?disease ;
+           rdfs:label       ?geneLabel .
+  ?disease um:Has_severity  ?severity ;
+           rdfs:label       ?diseaseLabel .
+  OPTIONAL { ?severity rdfs:label      ?severityLabel }
+  ?disease um:Treated_with  ?drug .
+  ?drug    rdfs:label       ?drugLabel .
+
+  OPTIONAL {
+    ?disease rdf:type       ?type .
+    FILTER(isIRI(?type))
+    FILTER NOT EXISTS {
+      ?subType rdfs:subClassOf ?type .
+      ?disease rdf:type       ?subType .
+      FILTER(?subType != ?type)
+    }
+    ?type rdfs:label         ?typeLabel .
+  }
+
+  FILTER regex(str(?severityLabel), \"severe\", \"i\")
+}
+GROUP BY ?diseaseLabel ?severityLabel ?typeLabel
+"
+query7 <- "
+PREFIX um:  <https://um.es/data/>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT
+  (?drugExt   AS ?Drug)
+  (GROUP_CONCAT(DISTINCT ?diseaseExt; separator=', ') AS ?Diseases)
+  (GROUP_CONCAT(DISTINCT ?phenExt;    separator=', ') AS ?Phenotypes)
+WHERE {
+  ?disease um:Treated_with   ?drug .
+  ?drug    owl:sameAs        ?drugExt .
+  ?disease owl:sameAs        ?diseaseExt .
+  OPTIONAL {
+    ?disease um:Has_phenotype ?phen .
+    ?phen    owl:sameAs        ?phenExt .
+  }
+}
+GROUP BY ?drugExt
+HAVING (COUNT(DISTINCT ?disease) >= 3)
+"
+query8 <- "
+PREFIX um:   <https://um.es/data/>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+
+SELECT
+  (?diseaseLabel                        AS ?Enfermedad)
+  (?diseaseExt                          AS ?EnfermedadURI)
+  (COALESCE(?severityLabel, \"Sin dato\") AS ?Severidad)
+  (GROUP_CONCAT(DISTINCT ?geneExt;    separator=\", \") AS ?Genes)
+  (GROUP_CONCAT(DISTINCT ?drugExt;    separator=\", \") AS ?Farmacos)
+  (GROUP_CONCAT(DISTINCT ?inheritLabel; separator=\", \") AS ?Herencia)
+  (GROUP_CONCAT(DISTINCT ?phenExt;    separator=\", \") AS ?Sintomas)
+  (GROUP_CONCAT(DISTINCT ?typeLabel;  separator=\", \") AS ?Categoria)
+WHERE {
+  ?disease rdf:type       ?clase .
+  ?clase   rdfs:subClassOf* um:Disorder .
+  ?disease a               owl:NamedIndividual ;
+           rdfs:label      ?diseaseLabel ;
+           owl:sameAs      ?diseaseExt .
+
+  OPTIONAL {
+    ?disease um:Has_severity ?severity .
+    OPTIONAL { ?severity rdfs:label ?severityLabel }
+  }
+  OPTIONAL {
+    ?gene um:Causes ?disease ;
+          owl:sameAs ?geneExt .
+  }
+  OPTIONAL {
+    ?disease um:Treated_with ?drug .
+    ?drug   owl:sameAs ?drugExt .
+  }
+  OPTIONAL {
+    ?disease um:InheritancePattern ?inherit .
+    OPTIONAL { ?inherit rdfs:label ?inheritLabel }
+  }
+  OPTIONAL {
+    ?disease um:Has_phenotype ?phen .
+    ?phen    owl:sameAs ?phenExt .
+  }
+  OPTIONAL {
+    ?disease rdf:type ?type .
+    ?type   rdfs:subClassOf* um:Disorder .
+    FILTER(isIRI(?type))
+    FILTER NOT EXISTS {
+      ?subType rdfs:subClassOf ?type .
+      ?disease rdf:type ?subType .
+      FILTER(?subType != ?type)
+    }
+    ?type rdfs:label ?typeLabel .
+  }
+}
+GROUP BY ?diseaseLabel ?diseaseExt ?severityLabel
+ORDER BY LCASE(?Enfermedad)
+"
 ```
 
 
