@@ -30,7 +30,7 @@
     vcard:hasEmail <mailto:francisco.iniestam1@um.es> .
 
 <https://um.es/data/umu/distribution/coagulation-nquads> a dcat:Distribution ;
-    dcat:downloadURL <http://dayhoff.inf.um.es/files/coagulation_disorders.nq> ;
+    dcat:downloadURL <https://github.com/Francisco100Iniesta/ESD/blob/main/recursos/enfermedades_cascada_coagulacion.nq> ;
     dct:format       <http://publications.europa.eu/resource/authority/file-type/NQ> ;
     dct:license      <http://creativecommons.org/licenses/by/4.0/> .
 
