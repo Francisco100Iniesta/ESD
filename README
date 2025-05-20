@@ -1,1 +1,10 @@
-Existen dos carpetas en este repositorio
+Este repositorio tiene la función de almacenar recursos necesarios para el entregable propuesto en la asignatura de ESD(Explotación Semántica de Datos), 
+impartida en el master de bioinformática de la Universidad de Murcia.
+
+El repositorio tiene 3 carpetas principale:
+
+- Carpeta Scripts- contiene codigo en R para realizar consultas sparql a través de un endpoint.
+- Carpeta Visor- contiene un html que actua como un script para ejecutar OpenSeaDragon, una libreria que permite mostrar imagenes de gran tamaño como html interactivos. 
+  Además, se encuentran otros archivos .html dado que mediante github emulamos dichos .html como webs para visualizarlos online mediante urls.
+- Carpeta Recursos- contiene los archivos relacionados con la red de grafos propuesta en el proyecto y relacionada con los trastornos congénitos de la coagulación. 
+
