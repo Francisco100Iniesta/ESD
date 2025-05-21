@@ -3,7 +3,6 @@ Este repositorio tiene la función de almacenar recursos necesarios para el entr
 El repositorio tiene 3 carpetas principales:
 
 - Carpeta Scripts- contiene codigo en R para realizar consultas sparql a través de un endpoint.
-- Carpeta Visor- contiene un html que actua como un script para ejecutar OpenSeaDragon, una libreria que permite mostrar imagenes de gran tamaño como html interactivos. 
-  Además, se encuentran otros archivos .html dado que mediante github emulamos dichos .html como webs para visualizarlos online mediante urls.
+- Carpeta Visor- contiene un html que actua como un script para ejecutar OpenSeaDragon, una libreria que permite mostrar imagenes de gran tamaño como html interactivos. Además, se encuentran otros archivos .html dado que mediante github emulamos dichos .html como webs para visualizarlos online mediante urls.
 - Carpeta Recursos- contiene los archivos relacionados con la red de grafos propuesta en el proyecto, relacionada con los trastornos congénitos de la coagulación. 
 
